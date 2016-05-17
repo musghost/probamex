@@ -12,24 +12,163 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 // bower:scss
 // endbower
 
+$text: #005F71;
+
+.navbar-nav > li > a {
+  padding: 40px 49px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
 .sqare {
-  width: 300px;
-  height: 500px;
+  width: 27%;
+  height: 464px;
   display: block;
   transform: skewX(-18deg);
   overflow: hidden;
   float: left;
+  border-left: 5px solid #fff;
+  border-right: 5px solid #fff;
+
+  &:nth-child(2) {
+    margin-left: -12%;
+    border-left: 10px solid #fff;
+  }
+
+  &:nth-child(3) {
+    border-right: 10px solid #fff;
+  }
 }
 
 .sqare-inside {
   background: {
-    image: url(../assets/images/beer.jpg);
     size: cover;
   };
   width: 500px;
   height: 500px;
   margin-left: -80px;
   transform: skewX(18deg);
+
+  &.muffin {
+    background: {
+      image: url(../assets/images/muffin.jpg);
+      position: center center;
+    }
+  }
+
+  &.cookies {
+    background: {
+      image: url(../assets/images/cookies.jpg);
+      position: -200px center;
+    }
+  }
+}
+
+.regular {
+  float: left;
+  width: 35%;
+  overflow: hidden;
+
+  img {
+    max-height: 464px;
+  }
+
+  &:first-child {
+    .regular-inside {
+      img {
+        margin-left: -50px;
+      }
+    }
+  }
+
+  &:last-child {
+    margin-left: -12%;
+    .regular-inside {
+      img {
+        margin-left: -250px;
+      }
+    }
+  }
+}
+
+.central-text {
+  text-align: center;
+  padding: 40px 0;
+
+  p {
+    margin: 0 auto;
+    width: 70%;
+    font-size: 22px;
+    color: $text;
+  }
+}
+
+footer {
+  background: #0099a8;
+  background: linear-gradient(to bottom,  #0099a8 0%,#74c7cf 100%);
+  color: #fff;
+  padding: 40px 0;
+
+  & > .address {
+    float: left;
+    width: 14.7%;
+    padding: 0 20px;
+    
+
+    & > .address {
+      margin-top: 40px;
+    }
+  }
+
+  .map {
+    float: left;
+    width: 26.15%;
+  }
+
+  .contact {
+    float: left;
+    width: 35.26%;
+    padding: 0 20px;
+  }
+
+  .message {
+    float: left;
+    width: 23.89%;
+  }
+
+  strong {
+    color: $text;
+  }
+
+  form {
+
+    input {
+      width: 100%;
+      display: block;
+      background: #fff;
+      border: 0;
+      margin-bottom: 10px;
+      color: $text;
+
+      &::placeholder {
+        color: $text;
+      }
+    }
+
+    textarea {
+      width: 100%;
+      height: 100px;
+
+      &::placeholder {
+        color: $text;
+      }
+    }
+  }
+}
+
+#map {
+  width: 100%;
+  height: 200px;
 }
 
 /**
