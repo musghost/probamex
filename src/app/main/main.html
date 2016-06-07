@@ -26,28 +26,30 @@
     </div><!-- /.container-fluid -->
   </nav>
 
-  <div class="clearfix">
-    <a href="#" class="regular">
-      <div class="regular-inside">
-        <img src="assets/images/beer.jpg" alt="">
-      </div>
-    </a>
-    <a href="#" class="sqare">
-      <div class="sqare-inside muffin"></div>
-    </a>
-    <a href="#" class="sqare">
-      <div class="sqare-inside cookies"></div>
-    </a>
-    <a href="#" class="regular">
-      <div class="regular-inside">
-        <img src="assets/images/chips.jpg" alt="">
-      </div>
-    </a>
-  </div>
+  <ui-view>
+    <div class="clearfix">
+      <a href="#" class="regular">
+        <div class="regular-inside">
+          <img src="assets/images/beer.jpg" alt="">
+        </div>
+      </a>
+      <a href="#" class="sqare">
+        <div class="sqare-inside muffin"></div>
+      </a>
+      <a href="#" class="sqare">
+        <div class="sqare-inside cookies"></div>
+      </a>
+      <a href="#" class="regular">
+        <div class="regular-inside">
+          <img src="assets/images/chips.jpg" alt="">
+        </div>
+      </a>
+    </div>
 
-  <div class="central-text">
-    <p>Somos una compañía 100% Mexicana, fundada en 1978, dedicada al desarrollo, manufactura y comercialización de ingredientes de origen natural, para la industria de alimentos, bebidas, alimento para mascotas, cosméticos y farmacéuticos.</p>
-  </div>
+    <div class="central-text">
+      <p>Somos una compañía 100% Mexicana, fundada en 1978, dedicada al desarrollo, manufactura y comercialización de ingredientes de origen natural, para la industria de alimentos, bebidas, alimento para mascotas, cosméticos y farmacéuticos.</p>
+    </div>
+  </ui-view>
 
   <footer class="clearfix">
     <div class="address">
@@ -65,7 +67,7 @@
       </div>
     </div>
     <div class="map">
-      <div id="map"></div>
+      <map id="map" ng-model="main.coords"></map>
     </div>
     <div class="contact">
       <h4>¿Encontró todo lo que buscaba?</h4>

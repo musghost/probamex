@@ -22,6 +22,9 @@ angular.module 'probamex'
         return
       return
 
+    vm.coords =
+      lat: 19.378455
+      lng: -99.160780
     vm.awesomeThings = []
     vm.classAnimation = ''
     vm.creationDate = 1463367494353
