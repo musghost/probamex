@@ -13,5 +13,11 @@ angular.module 'probamex'
       .state 'home.edulcorantes',
         url: 'edulcorantes'
         templateUrl: 'app/edulcorantes/edulcorantes.html'
+      .state 'home.servicios',
+        url: 'servicios'
+        templateUrl: 'app/servicios/servicios.html'
+      .state 'home.nosotros',
+        url: 'nosotros'
+        templateUrl: 'app/nosotros/nosotros.html'
 
     $urlRouterProvider.otherwise '/'
