@@ -264,21 +264,25 @@ $servicios: #006072;
   }
   h2{
     font-size: 28px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: .9em;
     padding: 20px 0 20px 20px;
   }
-  h3 {
-    font-size: 16px;
+  b {
+    color: $servicios;
+    font-size: 17px;
+    font-weight: 600;
+    font-style: italic;
   }
 
   p {
-    margin-bottom: 0;
+    padding: 0 0 10px 20px;
     font-size: 17px;
     line-height: 1.15em;
     font-weight: 300;
-    padding-left: 20px;
+    text-align: justify;
   }
+
 }
 
 $nosotros: #0099a8;
