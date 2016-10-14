@@ -19,5 +19,11 @@ angular.module 'probamex'
       .state 'home.nosotros',
         url: 'nosotros'
         templateUrl: 'app/nosotros/nosotros.html'
+      .state 'home.especialidades',
+        url: 'especialidades'
+        templateUrl: 'app/especialidades/especialidades.html'
+      .state 'home.sazonadores',
+        url: 'sazonadores'
+        templateUrl: 'app/sazonadores/sazonadores.html'
 
     $urlRouterProvider.otherwise '/'
