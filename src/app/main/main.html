@@ -18,16 +18,16 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Productos</a>
+          <li><a href="#">{{'PRODUCT' | translate}}</a>
             <ul>
-              <li class="nav-colorante"><a href="#/colorantes">Colorantes</a></li>
-              <li class="nav-edulcorante"><a href="#/edulcorantes">Edulcorantes</a></li>
-              <li class="nav-especialidad"><a href="#/especialidades">Especialidades</a></li>
-              <li class="nav-sazonador"><a href="#/sazonadores">Sazonadores</a></li>
+              <li class="nav-colorante"><a href="#/colorantes">{{'COLOR' | translate}}</a></li>
+              <li class="nav-edulcorante"><a href="#/edulcorantes">{{'EDUL' | translate}}</a></li>
+              <li class="nav-especialidad"><a href="#/especialidades">{{'ESP' | translate}}</a></li>
+              <li class="nav-sazonador"><a href="#/sazonadores">{{'SAZON' | translate}}</a></li>
             </ul>
           </li>
-          <li><a href="#/servicios">Servicios</a></li>
-          <li><a href="#/nosotros">Nosotros</a></li>
+          <li><a href="#/servicios">{{'SERVICE' | translate}}</a></li>
+          <li><a href="#/nosotros">{{'ABOUT' | translate}}</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -54,18 +54,18 @@
     </div>
 
     <div class="central-text">
-      <p>Somos una compañía 100% Mexicana, fundada en 1978, dedicada al desarrollo, manufactura y comercialización de ingredientes de origen natural, para la industria de alimentos, bebidas, alimento para mascotas, cosméticos y farmacéuticos.</p>
+      <p>{{'CENTRAL' | translate}}</p>
     </div>
   </ui-view>
 
   <footer class="clearfix">
     <div class="address">
       <p>
-        <strong>conmut.</strong>
+        <strong>{{'TEL' | translate}}</strong>
         <span>5358.7599</span>
       </p>
       <p>
-        <strong>ventas</strong>
+        <strong>{{'SALES' | translate}}</strong>
         <span>2629.2260</span>
       </p>
       <div class="address">
@@ -77,7 +77,7 @@
       <map id="map" ng-model="main.coords"></map>
     </div>
     <div class="contact">
-      <h4>¿Encontró todo lo que buscaba?</h4>
+      <h4>{{'QUES' | translate}}</h4>
       <form>
         <input type="text" name="name" placeholder="Nombre">
         <input type="text" name="name" placeholder="Email">
@@ -85,8 +85,8 @@
       </form>
     </div>
     <div class="message">
-      <p>Estamos innovando día a día. Si no encontró lo que buscaba, deje sus comentarios y a la brevedad un representante se pondrá en contacto.</p>
-      <h4>¡Su idea podría ser nuestro siguiente nuevo desarrollo!</h4>
+      <p>{{'INNO' | translate}}</p>
+      <h4>{{'IDEA' | translate}}</h4>
     </div>
   </footer>
 
