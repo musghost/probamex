@@ -15,9 +15,59 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 $text: #005F71;
 
 .navbar-nav > li > a {
-  padding: 40px 49px;
+  padding: 40px 40px;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #595857;
+
+    &:hover {
+    background-color: transparent;
+    color: #0099A8;
+    }
+}
+
+.navbar-nav > li {
+  position: relative;
+
+  &:hover {
+    & > ul {
+      display: block;
+    }
+  }
+}
+
+.navbar-nav > li > ul {
+  margin-top: -35px;
+  padding-left: 31px;
   font-size: 14px;
   text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  list-style-type: none;
+  z-index: 2;
+  display: none;
+}
+
+.navbar-nav > li > ul > li > a {
+  padding: 5px;
+  display: block;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.nav-colorante {
+  background-color: #ff5401;
+  border-top: 3px solid #0099A8;
+}
+.nav-edulcorante {
+  background-color: #72d54a;
+}
+.nav-especialidad {
+  background-color: #EA1D76;
+}
+.nav-sazonador {
+  background-color: #FFC627;
 }
 
 .sqare {
@@ -125,6 +175,7 @@ footer {
   background: linear-gradient(to bottom,  #0099a8 0%,#74c7cf 100%);
   color: #fff;
   padding: 40px 0;
+  margin-top: 80px;
 
   & > .address {
     float: left;
@@ -198,8 +249,58 @@ $colorante: #ff5401;
     color: #fff;
     background: $colorante;
     padding: 5px;
-    font-size: 20px;
+    font-size: 23px;
+    font-weight: 500;
+  }
+  h2 {
+    font-size: 27px;
+    font-weight: 500;
+    line-height: .9em;
+    padding: 20px 0 5px 0;
+  }
+  h3 {
+    font-size: 16px;
+  }
+
+  p {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.3em;
+  }
+
+  img {
+    padding-top: 10px;
+  }
+  .fontorange {
+    color: $colorante;
+  }
+  .lefttext {
+    text-align: justify;
+  }
+  .leftsquare {
+    h1{
+      padding: 0;
+    }
+    background: $colorante;
+    color: #FFF;
+    margin-top: 25px;
+    padding: 1px 3px 10px 13px;
+  }
+}
+
+$edulcorante: #72d54a;
+.edulcorante {
+  h2, h3 {
+    color: $edulcorante;
     font-weight: normal;
+  }
+  h1 {
+    color: #fff;
+    background: $edulcorante;
+    padding: 5px;
+    font-size: 23px;
+    font-weight: 500;
   }
 
   h3 {
@@ -207,7 +308,202 @@ $colorante: #ff5401;
   }
 
   p {
+    padding-left: 20px;
     margin-bottom: 0;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.3em;
+    text-align: justify;
+  }
+
+  h2 {
+    font-size: 23px;
+    padding: 5px 0 0 20px;
+    line-height: 1.3em;
+  }
+  .fontgreen {
+    color: $edulcorante;
+  }
+  .leftsquare {
+    h1{
+      padding: 0 0 0 20px;
+    }
+    background: $edulcorante;
+    color: #FFF;
+    margin-top: 65px;
+    padding: 1px 35px 20px 0px;
+  }
+}
+
+$especialidades: #EA1D76;
+.especialidades {
+  h2 {
+    font-size: 23px;
+    padding: 5px 0 0 20px;
+    line-height: 1.3em;
+    color: $especialidades;
+    font-weight: 500;
+  }
+  h3 {
+    color: #fff;
+    background: $especialidades;
+    padding: 5px;
+    font-size: 23px;
+    font-weight: 500;
+  }
+  p {
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.3em;
+    text-align: justify;
+  }
+  ul {
+    padding: 15px 0 0 30px;
+    list-style-type: none;
+  }
+  .rightsquare1 {
+    h3 {padding: 0 0 0 15px;}
+    margin: 15px -25px 0 0;
+    background-color: $especialidades;
+    color: #FFF;
+    padding: 0 35px 10px 0px;
+  }
+  .rightsquare2 {
+    h3 {padding: 0 0 0 15px;}
+    margin: 15px -25px 0 0;
+    background-color: $especialidades;
+    color: #FFF;
+    padding: 0 35px 160px 0px;
+  }
+  .greysquare {
+    h3 {margin: 20px 10px 0 0;}
+    margin-top: 30px;
+    background: #DADADA;
+  }
+}
+
+$sazonadores: #FFC627;
+.sazonadores {
+  h2 {
+    color: $sazonadores;
+    font-weight: 500;
+    font-size: 23px;
+    padding: 5px 0 0 20px;
+    line-height: 1.3em;
+  }
+  p {
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.3em;
+    text-align: justify;
+  }
+  .rightsquare {
+    h3 {padding: 0 0 0 15px;}
+    p {text-align: left;}
+    margin: 15px -25px 0 0;
+    background-color: $sazonadores;
+    color: #FFF;
+    padding: 0 35px 80px 0px;
+  }
+}
+
+$servicios: #006072;
+.servicios {
+  h2, h3 {
+    color: $servicios;
+    font-weight: normal;
+  }
+  h1 {
+    color: #fff;
+    background: $servicios;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: normal;
+  }
+  h2{
+    font-size: 28px;
+    font-weight: 600;
+    line-height: .9em;
+    padding: 20px 0 20px 20px;
+  }
+  b {
+    color: $servicios;
+    font-size: 17px;
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  p {
+    padding: 0 0 10px 20px;
+    font-size: 17px;
+    line-height: 1.15em;
+    font-weight: 300;
+    text-align: justify;
+  }
+
+}
+
+$nosotros: #0099a8;
+.nosotros {
+  h3 {
+    font-weight: 500;
+    font-size: 18px;
+    padding: 0 0 0 30px;
+  }
+  p {
+    padding: 0 0 10px 30px;
+    font-size: 15px;
+    line-height: 1.15em;
+    font-weight: 300;
+    text-align: justify;
+  }
+  img {
+    padding: 10px 0 0 40px;
+    margin: 0;
+  }
+  .left-square {
+    color: #FFF;
+    background: $nosotros;
+    margin: 20px 0 30px 20px;
+    ul {
+      color: #FFF;
+      background: $nosotros;
+      font-size: 12px;
+      padding: 15px;
+      list-style-type: none;
+    }
+  }
+  .right-heading {
+    color: $nosotros;
+    border-top: 2px solid #A0A0A0;
+    border-bottom: 2px solid #A0A0A0;
+    padding: 15px 0 30px 0;
+    margin: 100px 40px 50px 50px;
+    h2 {
+      padding: 0;
+      font-size: 45px;
+      font-weight: 300;
+      line-height: .3em;
+      text-align: center; 
+    }
+    h1 {
+      color: $nosotros;
+      padding: 0;
+      font-size: 35px;
+      font-weight: 600;
+      line-height: .5em;
+      text-align: center;
+    }
+  }
+  .fontblue {
+    color: $nosotros;
+  }
+  .lefttext {
+    margin-top: 35px;
   }
 }
 
@@ -215,6 +511,7 @@ $colorante: #ff5401;
   background: #DADADA;
   padding: 30px 0;
   margin-bottom: 40px;
+
 }
 
 /**
