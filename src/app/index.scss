@@ -15,9 +15,59 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 $text: #005F71;
 
 .navbar-nav > li > a {
-  padding: 40px 49px;
+  padding: 40px 40px;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #595857;
+
+    &:hover {
+    background-color: transparent;
+    color: #0099A8;
+    }
+}
+
+.navbar-nav > li {
+  position: relative;
+
+  &:hover {
+    & > ul {
+      display: block;
+    }
+  }
+}
+
+.navbar-nav > li > ul {
+  margin-top: -35px;
+  padding-left: 31px;
   font-size: 14px;
   text-transform: uppercase;
+  text-align: center;
+  position: absolute;
+  list-style-type: none;
+  z-index: 2;
+  display: none;
+}
+
+.navbar-nav > li > ul > li > a {
+  padding: 5px;
+  display: block;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.nav-colorante {
+  background-color: #ff5401;
+  border-top: 3px solid #0099A8;
+}
+.nav-edulcorante {
+  background-color: #72d54a;
+}
+.nav-especialidad {
+  background-color: #EA1D76;
+}
+.nav-sazonador {
+  background-color: #FFC627;
 }
 
 .sqare {
