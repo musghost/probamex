@@ -2,6 +2,9 @@ angular.module 'probamex'
   .controller 'MainController', ($timeout, webDevTec, toastr, $stateParams, $state) ->
     'ngInject'
     vm = this
+
+    vm.lang = $stateParams.id
+
     vm.change = (e) ->
       e.preventDefault()
       if $stateParams.id == 'es'
