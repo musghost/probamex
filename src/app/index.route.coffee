@@ -3,7 +3,7 @@ angular.module 'probamex'
     'ngInject'
     $stateProvider
       .state 'home',
-        url: '/'
+        url: '/:id/'
         templateUrl: 'app/main/main.html'
         controller: 'MainController'
         controllerAs: 'main'
@@ -16,8 +16,6 @@ angular.module 'probamex'
       .state 'home.servicios',
         url: 'servicios'
         templateUrl: 'app/servicios/servicios.html'
-        controller: 'ServiceController'
-        controllerAs: 'service'
       .state 'home.nosotros',
         url: 'nosotros'
         templateUrl: 'app/nosotros/nosotros.html'

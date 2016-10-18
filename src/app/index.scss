@@ -70,6 +70,24 @@ $text: #005F71;
   background-color: #FFC627;
 }
 
+.translateButtons {
+  display: block !important;
+  margin-top: 35px !important;
+  margin-left: 28px !important;
+
+  a {
+    font-weight: 200 !important; 
+    font-size: 12px !important;
+    padding: 0px !important;
+    line-height: 1.2em !important;
+    
+    &:hover, &.active {
+      font-weight: 500 !important;
+      color: #0099A8 !important;
+    }
+  }
+}
+
 .sqare {
   width: 27%;
   height: 464px;
