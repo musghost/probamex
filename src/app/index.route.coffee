@@ -16,6 +16,8 @@ angular.module 'probamex'
       .state 'home.servicios',
         url: 'servicios'
         templateUrl: 'app/servicios/servicios.html'
+        controller: 'ServiceController'
+        controllerAs: 'service'
       .state 'home.nosotros',
         url: 'nosotros'
         templateUrl: 'app/nosotros/nosotros.html'
