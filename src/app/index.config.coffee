@@ -160,7 +160,8 @@ angular.module 'probamex'
 
       #SECCION_ SAZONADORES
       #PIQUIPRO
-      PIQUIPRO_H2: 'PIQUIPRO® Sazonadores.'
+      PIQUIPRO_H2_1: 'PIQUIPRO®'
+      PIQUIPRO_H2_2: 'Sazonadores.'
       PIQUIPRO_P1: 'Nuestros sazonadores son resultado de una mezcla balanceada de polvos, que da a las botanas el sabor ideal. Tenemos diferentes opciones base chile o base queso.'
       #Base de Chile
       BASE_CHILE_H3: 'Base chile'
@@ -193,23 +194,24 @@ angular.module 'probamex'
 
       #SECCION_COLORANTES
       #AZURBIN® Color caramelo
-      AZURBIN_CARAM_H2: 'AZURBIN® Caramel color.'
+      AZURBIN_CARAM_H2_1: 'AZURBIN®'
+      AZURBIN_CARAM_H2_2: 'Caramel color.'
       AZURBIN_CARAM_P1: 'Caramel color is a liquid or solid food coloring made by the controlled heating of food-grade carbohydrates, either alone or in the presence of ammonia or sul te compounds. It is a water dis- persible colloidal aggregate.'
       AZURBIN_CARAM_P2: 'Since our caramel color is made  om cane sugar, it’s a GMO  ee product.'
       #AZUQUEM® Clase I (E150a)*
       AZUQUEM_C1_H1: 'AZUQUEM® Class I (E150a)*'
-      AZUQUEM_C1_P1: 'Natural caramel color, obtained by the controlled heating of carbohydrates with food-grade acids or alkalis.'
-      AZUQUEM_C1_P2: '*Sul te and 4MEI  ee'
+      AZUQUEM_C1_P1: 'Natural caramel color, obtained by the controlled heating of carbohydrates with food-grade acids or alkalis. *Sul te and 4MEI  ee'
       #Azúcar caramelizada 02
       AZUCAR02_H3: 'Caramelized sugar 02'
-      AZUCAR02_P1: 'Slight negative charge. Color ranges  om reddish-brown to dark yellow.'
+      AZUCAR02_P1: 'Slight negative charge.'
+      AZUCAR02_P2: 'Color ranges  om reddish-brown to dark yellow.'
       #Azúcar caramelizada 03
       AZUCAR03_H3: 'Caramelized sugar 03'
-      AZUCAR03_P1: 'Slight positive charge. Color ranges  om reddish-brown to dark yellow.'
+      AZUCAR03_P1: 'Slight positive charge.'
+      AZUCAR03_P2: 'Color ranges  om reddish-brown to dark yellow.'
       #AZURBIN® A Clase III (E150c)*
       AZURBIN_A_H1: 'AZURBIN® A Class III (E150c)*'
-      AZURBIN_A_P1: 'Also known as ammonia caramel, it is prepared by the controlled heating of carbohydrates in the presence of ammonium compounds, which gives it a positive charge. It is stable in saline environments.'
-      AZURBIN_A_P2: '*Sulfite free.'
+      AZURBIN_A_P1: 'Also known as ammonia caramel, it is prepared by the controlled heating of carbohydrates in the presence of ammonium compounds, which gives it a positive charge. It is stable in saline environments. *Sulfite free.'
       #AZURBIN® K2 Clase IV (E150d)*
       AZURBIN_K2_H1: 'AZURBIN® K2 Class IV (E150d)*'
       AZURBIN_K2_P1: 'This color is obtained by the controlled heating of carbohydrates in the presence of sulfite and ammonium compounds, which gives it a negative charge. It resists acid pHs.'
@@ -228,7 +230,8 @@ angular.module 'probamex'
 
       #SECCION_EDULCORANTES
       #sucrex
-      SUCREX_H2: 'SSUCREX® Inverted sugar.'
+      SUCREX_H2_1: 'SUCREX®'
+      SUCREX_H2_2: 'Inverted sugar.'
       SUCREX_P1: 'Inverted sugar is a caloric sweetener, in which the molecular structure of sucrose is inverted through acid and thermal hydrolysis. Being a combination of sucrose, glucose and fructose, it is 1.3 times sweeter than regular sugar and it doesn’t recrystallize. Inverted sugar syrups are highly soluble in water.'
       SUCREX_P2: 'They are greatly used in the food and beverage industry as moisturizing, anti-crystallizing, and anti eeze agents; for accelerating fermentation, developing caramelization, and also for increas- ing viscosity in liquids.'
       SUCREX_P3: 'Our syrups contain maximum 75oBx and can be made from undefined or refined cane sugar, with an amber or translucent finish.'
@@ -238,9 +241,10 @@ angular.module 'probamex'
       #SUCREX® C
       SUCREX_C_H1: 'SUCREX® C'
       SUCREX_C_P1: 'Medium invert cane sugar syrup, 40-80% reducing sugars.'
-      #SUCREXE
+      #SUCREX E
       SUCREX_E_H1: 'SUCREX® E'
       SUCREX_E_P1: 'Medium-high invert cane sugar syrup, 80% min. reducing sugars.'
+      #SUCREX ED
       SUCREX_ED_H1: 'SUCREX® ED'
       SUCREX_ED_P1: 'Total invert cane sugar syrup, 90% min. reducing sugars.'
       #ABEMIEL
@@ -253,7 +257,8 @@ angular.module 'probamex'
 
       #SECCION_ESPECIALIDADES
       #FrutiPro
-      FRUTIPRO_H2: 'FRUTIPRO® Spray-dried  uits and vegetables.'
+      FRUTIPRO_H2_1: 'FRUTIPRO®'
+      FRUTIPRO_H2_2: 'Spray-dried  uits and vegetables.'
       FRUTIPRO_P1: 'Spray-dried  uits and vegetables are juices, pulps or purees, dried into  ne powders that pre- serve their  avor and nutrients. They are natural options that can be incorporated into low mois- ture content products, or can be reconstituted with liquids. They are easier to handle and can be stored for longer time than raw  uits and vege- tables.'
       #Frutas
       FRUTAS_H3: 'Frutas'
@@ -305,7 +310,8 @@ angular.module 'probamex'
       HARINA_MULTI_P1: 'A rice, oats, and barley mix.'
       HARINA_MULTI_P2: '*Contains gluten.'
       #YEASTEX
-      YEASTEX_H2: 'YEASTEX® Yeast nutrient.'
+      YEASTEX_H2_1: 'YEASTEX®'
+      YEASTEX_H2_2: 'Yeast nutrient.'
       YEASTEX_P1: 'A mixture of speci c nutrients developed to fortify yeasts; it accelerates growth and reduces fermentation times. It is highly used in the Brewing Industry since it increases alco- hol yield for every kilo of must; ensures maximum usage of'
       YEASTEX_P2: 'fermentable sugars; increases yeasts resistance to high alco- hol concentration and; helps maintain strains pure and in optimum shape.'
       #Extracto de jamaica liquido
@@ -317,7 +323,8 @@ angular.module 'probamex'
 
       #SECCION_ SAZONADORES
       #PIQUIPRO
-      PIQUIPRO_H2: 'PIQUIPRO® Seasonings.'
+      PIQUIPRO_H2_1: 'PIQUIPRO®'
+      PIQUIPRO_H2_2: 'Seasonings.'
       PIQUIPRO_P1: 'Our seasonings are the result of a balanced powder mixture that gives your snacks a great  avor. We have di erent pep- per-based and cheese-based options.'
       #Base de Chile
       BASE_CHILE_H3: 'Pepper-based'
