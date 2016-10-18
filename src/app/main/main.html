@@ -20,15 +20,28 @@
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#">{{'PRODUCT' | translate}}</a>
             <ul>
-              <li class="nav-colorante"><a href="#/colorantes">{{'COLOR' | translate}}</a></li>
-              <li class="nav-edulcorante"><a href="#/edulcorantes">{{'EDUL' | translate}}</a></li>
-              <li class="nav-especialidad"><a href="#/especialidades">{{'ESP' | translate}}</a></li>
-              <li class="nav-sazonador"><a href="#/sazonadores">{{'SAZON' | translate}}</a></li>
+              <li class="nav-colorante">
+                <a ui-sref="home.colorantes({id: main.lang})">{{'COLOR' | translate}}</a>
+              </li>
+              <li class="nav-edulcorante">
+                <a ui-sref="home.edulcorantes({id: main.lang})">{{'EDUL' | translate}}</a>
+              </li>
+              <li class="nav-especialidad">
+                <a ui-sref="home.especialidades({id: main.lang})">{{'ESP' | translate}}</a>
+              </li>
+              <li class="nav-sazonador">
+                <a ui-sref="home.sazonadores({id: main.lang})">{{'SAZON' | translate}}</a>
+              </li>
             </ul>
           </li>
-          <li><a href="#/servicios">{{'SERVICE' | translate}}</a></li>
-          <li><a href="#/nosotros">{{'ABOUT' | translate}}</a></li>
-          <li class="translateButtons"><a href="#">ENGLISH</a>
+          <li>
+            <a ui-sref="home.servicios({id: main.lang})">{{'SERVICE' | translate}}</a>
+          </li>
+          <li>
+            <a ui-sref="home.nosotros({id: main.lang})">{{'ABOUT' | translate}}</a>
+          </li>
+          <li class="translateButtons">
+            <a href="#">ENGLISH</a>
             <a href="#" class="active">ESPAÑOL</a>
           </li>
         </ul>
