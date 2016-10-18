@@ -2,6 +2,8 @@ angular.module 'probamex'
   .controller 'MainController', ($timeout, webDevTec, toastr) ->
     'ngInject'
     vm = this
+
+    vm.nombre = 'Raul'
     activate = ->
       getWebDevTec()
       $timeout (->

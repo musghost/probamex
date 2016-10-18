@@ -29,39 +29,17 @@ angular.module 'probamex'
       QUES: '¿Encontró todo lo que buscaba?'
       INNO: 'Estamos innovando día a día. Si no encontró lo que buscaba, deje sus comentarios y a la brevedad un representante se pondrá en contacto.'
       IDEA: '¡Su idea podría ser nuestro siguiente nuevo desarrollo!'
-
-    $translateProvider.translations 'en',
-      #menu
-      PRODUCT: 'Products'
-      SERVICE: 'Services'
-      ABOUT: 'About Us'
-      COLOR: 'Colorings'
-      EDUL: 'Sweeteners'
-      ESP: 'Specialities'
-      SAZON: 'Seasonigs'
-      BUTTON_LANG_ES: 'Spanish'
-      BUTTON_LANG_EN: 'English'
-      #centraltext
-      CENTRAL: 'We are a 100% Mexican company, founded in 1978, committed to develop, manufacture and commercialize natural ingredients for the food, beverage, pet food, cosmetic and pharmaceutical industries.'
-      #footer
-      TEL: 'tel.'
-      SALES: 'sales'
-      QUES: 'How can we help you?'
-      INNO: 'If you want to receive further information about our products and services, contact us! We have solutions that can meet your specific needs.'
-      IDEA: 'We are daily innovating; your need could become a new development!'
-
-    $translateProvider.preferredLanguage 'es',
-
       #SECCION_COLORANTES
       #AZURBIN® Color caramelo
-      AZURBIN_CARAM_H2: 'AZURBIN® Color caramelo'
+      AZURBIN_CARAM_H2_1: 'AZURBIN®'
+      AZURBIN_CARAM_H2_2: 'Color caramelo'
       AZURBIN_CARAM_P1: 'El color caramelo es un líquido, o un sólido, que resulta del tratamiento térmico controlado de azúcares. Este tratamiento puede llevarse a cabo en presencia de compuestos amónicos y/o sulfíticos, aptos para uso en industrias alimentarias. Se comporta como un coloide y es dispersable en agua.'
       AZURBIN_CARAM_P2: 'En Probamex ofrecemos un producto libre de Organismos Genéticamente Modificados, pues nuestro color caramelo se fabrica a partir de azúcar de caña.'
       #AZUQUEM® Clase I (E150a)*
       AZUQUEM_C1_H1: 'AZUQUEM® Clase I (E150a)*'
-      AZUQUEM_C1_P1: 'Color caramelo natural que se obtiene del tratamiento térmico controlado de azúcares, en presencia de un ácido o un álcali. *Libre de sulfitos y 4MEI'
+      AZUQUEM_C1_P1: 'Color caramelo natural que se obtiene del tratamiento térmico controlado de azúcares, en presencia de un ácido o un álcali. *Libre de sulfitos y 4MEI.'
       #Azúcar caramelizada 02
-      AZUCAR02_H3: 'Azúcar caramelizada 02.'
+      AZUCAR02_H3: 'Azúcar caramelizada 02'
       AZUCAR02_P1: 'Ligera carga negativa.' 
       AZUCAR02_P2: 'Tonalidades rojizas a ambar.'
       #Azúcar caramelizada 03
@@ -70,17 +48,18 @@ angular.module 'probamex'
       AZUCAR03_P2: 'Tonalidades rojizas a ambar.'
       #AZURBIN® A Clase III (E150c)*
       AZURBIN_A_H1: 'AZURBIN® A Clase III (E150c)*'
-      AZURBIN_A_P1: 'También llamado color caramelo amónico, se obtiene del tratamiento térmico controlado de azúcares en presencia de compuestos amónicos, dándole una carga positiva. Estable en ambientes salinos. *Libre de sulfitos'
+      AZURBIN_A_P1: 'También llamado color caramelo amónico, se obtiene del tratamiento térmico controlado de azúcares en presencia de compuestos amónicos, dándole una carga positiva. Estable en ambientes salinos. *Libre de sulfitos.'
       #AZURBIN® K2 Clase IV (E150d)*
       AZURBIN_K2_H1: 'AZURBIN® K2 Clase IV (E150d)*'
-      AZURBIN_K2_P1: 'Este color se obtiene mediante un tratamiento térmico controlado de azúcares, en presencia de compuestos amónicos y sulfíticos, lo que le da una carga negativa. Es resistente a pH’s ácidos. *Por su naturaleza contiene sulfitos*Por su naturaleza contiene sulfitos'
+      AZURBIN_K2_P1: 'Este color se obtiene mediante un tratamiento térmico controlado de azúcares, en presencia de compuestos amónicos y sulfíticos, lo que le da una carga negativa. Es resistente a pH’s ácidos.'
+      AZURBIN_K2_P2: '*Por su naturaleza contiene sulfitos.'
       #K2 Poder sencillo
       PODER_K2_H3: 'K2 Poder sencillo'
-      PODER_K2_P1: 'Líquido'
+      PODER_K2_P1: 'Líquido.'
       #K2 Doble fuerza
       DOBLE_K2_H3: 'K2 Doble fuerza'
-      DOBLE_K2_P1: 'Líquido'
-      DOBLE_K2_P2: 'Polvo doble concentración de color'
+      DOBLE_K2_P1: 'Líquido.'
+      DOBLE_K2_P2: 'Polvo doble concentración de color.'
       #AZUQUEM®
       AZUQUEM_H2: 'AZUQUEM®'
       AZUQUEM_H1: 'Azúcar caramelizada 01'
@@ -187,6 +166,24 @@ angular.module 'probamex'
       BASE_QUESO_P2: 'Queso jalapeño'
 
     $translateProvider.translations 'en',
+      #menu
+      PRODUCT: 'Products'
+      SERVICE: 'Services'
+      ABOUT: 'About Us'
+      COLOR: 'Colorings'
+      EDUL: 'Sweeteners'
+      ESP: 'Specialities'
+      SAZON: 'Seasonigs'
+      BUTTON_LANG_ES: 'Spanish'
+      BUTTON_LANG_EN: 'English'
+      #centraltext
+      CENTRAL: 'We are a 100% Mexican company, founded in 1978, committed to develop, manufacture and commercialize natural ingredients for the food, beverage, pet food, cosmetic and pharmaceutical industries.'
+      #footer
+      TEL: 'tel.'
+      SALES: 'sales'
+      QUES: 'How can we help you?'
+      INNO: 'If you want to receive further information about our products and services, contact us! We have solutions that can meet your specific needs.'
+      IDEA: 'We are daily innovating; your need could become a new development!'
 
       #SECCION_COLORANTES
       #AZURBIN® Color caramelo
@@ -324,3 +321,5 @@ angular.module 'probamex'
       BASE_QUESO_H3: 'Cheese-based'
       BASE_QUESO_P1: 'Cheddar cheese'
       BASE_QUESO_P2: 'Jalapeño cheese'
+
+      $translateProvider.preferredLanguage 'es'
