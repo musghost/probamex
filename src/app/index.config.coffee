@@ -94,7 +94,8 @@ angular.module 'probamex'
 
       #SECCION_ESPECIALIDADES
       #FrutiPro
-      FRUTIPRO_H2: 'FRUTIPRO® Frutas y vegetales en polvo.'
+      FRUTIPRO_H2_1: 'FRUTIPRO®'
+      FRUTIPRO_H2_2: 'Frutas y vegetales en polvo.'
       FRUTIPRO_P1: 'Las frutas y vegetales en polvo son jugos, pulpas o purés, secados por aspersión, lo que da como resultado polvos nos que mantienen el sabor y nutrimentos de las frutas o vegetales originales. Son opciones naturales que pueden incorporarse en productos de baja humedad, o reconstituirse en agua. Son fáciles de manejar y almacenar, por más tiempo.'
       #Frutas
       FRUTAS_H3: 'Frutas'
@@ -146,7 +147,8 @@ angular.module 'probamex'
       HARINA_MULTI_P1: 'A partir de una mezcla de arroz, avena y cebada'
       HARINA_MULTI_P2: '*Contiene gluten.'
       #YEASTEX
-      YEASTEX_H2: 'YEASTEX® Nutriente para levadura.'
+      YEASTEX_H2_1: 'YEASTEX®'
+      YEASTEX_H1_2: 'Nutriente para levadura.'
       YEASTEX_P1: 'Es una mezcla de nutrientes especí cos para el fortalecimiento de las levaduras, lo que acelera su crecimiento y reduce el tiempo de fermentación. Es muy utilizado en la industria cervecera pues aumenta el rendimiento de alcohol, por kilo de mosto; asegura un total aprovechamiento de los'
       YEASTEX_P2: 'azúcares fermentables; aumenta la resistencia de las levaduras a altas concentraciones de alcohol; y ayuda a mantener las cepas puras y en óptimas condiciones.'
       #Extracto de jamaica liquido
