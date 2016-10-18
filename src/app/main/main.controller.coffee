@@ -1,9 +1,15 @@
 angular.module 'probamex'
-  .controller 'MainController', ($timeout, webDevTec, toastr, $stateParams) ->
+  .controller 'MainController', ($timeout, webDevTec, toastr, $stateParams, $state) ->
     'ngInject'
     vm = this
-
-    vm.nombre = 'Raul'
+    vm.change = (e) ->
+      e.preventDefault()
+      if $stateParams.id == 'es'
+        to = 'en'
+      else
+        to = 'es'
+      $state.go $state.current.name, {id: to}, {reload: true}
+      
     activate = ->
       getWebDevTec()
       $timeout (->
