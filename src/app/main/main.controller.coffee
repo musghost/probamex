@@ -1,5 +1,5 @@
 angular.module 'probamex'
-  .controller 'MainController', ($timeout, webDevTec, toastr) ->
+  .controller 'MainController', ($timeout, webDevTec, toastr, $stateParams) ->
     'ngInject'
     vm = this
 
@@ -32,4 +32,5 @@ angular.module 'probamex'
     vm.creationDate = 1463367494353
     vm.showToastr = showToastr
     activate()
+
     return
