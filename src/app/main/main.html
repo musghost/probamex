@@ -28,8 +28,9 @@
           </li>
           <li><a href="#/servicios">{{'SERVICE' | translate}}</a></li>
           <li><a href="#/nosotros">{{'ABOUT' | translate}}</a></li>
-          <li class="translateButtons"><a href="#">ENGLISH</a>
-            <a href="#" class="active">ESPAÑOL</a>
+          <li class="translateButtons">
+            <a href="#" ng-click="main.change($event)" ng-class="{'active':main.lang==='en'}">ENGLISH</a>
+            <a href="#" ng-click="main.change($event)" ng-class="{'active':main.lang==='es'}">ESPAÑOL</a>
           </li>
         </ul>
       </div><!-- /.navbar-collapse -->
