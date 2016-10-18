@@ -67,7 +67,8 @@ angular.module 'probamex'
 
       #SECCION_EDULCORANTES
       #sucrex
-      SUCREX_H2: 'SUCREX® Jarabe de azúcar invertido.'
+      SUCREX_H2_1: 'SUCREX®'
+      SUCREX_H2_2: 'Jarabe de azúcar invertido.'
       SUCREX_P1: 'El azúcar invertido es un edulcorante calórico, resultado de una hidrólisis ácida y térmica del azúcar de caña, que invierte la estructura molecular de la sacarosa. Al ser una mezcla de sacarosa, glucosa y fructosa, aporta un mayor dulzor y no recristaliza. Su aspecto es el de un jarabe fluido; es 1.3 veces más dulce que el azúcar; y se solubiliza rápidamente en agua.'
       SUCREX_P2: 'Es muy utilizada en la industria como anticristalizante, anticongelante y humectante; por acelerar la fermentación y fomentar la caramelización; por aumentar la viscosidad en líquidos.'
       SUCREX_P3: 'Nuestros jarabes contienen máx. 75oBx y pueden partir de azúcar estándar o re nada, yendo desde una apariencia traslúcida hasta ámbar.'
@@ -77,9 +78,12 @@ angular.module 'probamex'
       #SUCREX® C
       SUCREX_C_H1: 'SUCREX® C'
       SUCREX_C_P1: 'Jarabe de azúcar con inversión media, 40-80% azúcares reductores.'
-      #SUCREXE
+      #SUCREX E
       SUCREX_E_H1: 'SUCREX® E'
       SUCREX_E_P1: 'Jarabe de azúcar con alta inversión, min. 80% azúcares reductores.'
+      #SUCREX ED
+      SUCREX_ED_H1: 'SUCREX® ED'
+      SUCREX_ED_P1: 'Jarabe de azúcar con muy alta inversión, min. 90% azúcares reductores.'
       #ABEMIEL
       ABEMIEL_H2: 'ABEMIEL®'
       ABEMIEL_P1: 'La miel es un edulcorante calórico natural producido por las abejas a partir del néctar de las flores, libre de antibióticos.'
