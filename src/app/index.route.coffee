@@ -26,4 +26,4 @@ angular.module 'probamex'
         url: 'sazonadores'
         templateUrl: 'app/sazonadores/sazonadores.html'
 
-    $urlRouterProvider.otherwise '/'
+    $urlRouterProvider.otherwise '/es/'

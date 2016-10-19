@@ -3,7 +3,8 @@ angular.module 'probamex'
     'ngInject'
     vm = this
 
-    vm.nombre = 'Raul'
+    vm.lang = $stateParams.id
+
     activate = ->
       getWebDevTec()
       $timeout (->
