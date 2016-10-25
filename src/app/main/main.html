@@ -73,16 +73,17 @@
       <p>{{'CENTRAL' | translate}}</p>
     </div>
   </ui-view>
+</div>
 
-  <footer class="clearfix">
-    <div class="address">
+<footer class="clearfix">
+  <div class="container">
+    <div class="address-tel">
       <p>
-        <strong>{{'TEL' | translate}}</strong>
-        <span>5358.7599</span>
-      </p>
-      <p>
-        <strong>{{'SALES' | translate}}</strong>
-        <span>2629.2260</span>
+        <h2>{{'TEL' | translate}}</h2>
+        <span>+52 (55) 53587599</span>
+        <h2>{{'SALES' | translate}}</h2>
+        <span>+52 (55) 2629·2260</span>
+        <span>info@probamex.com</span>
       </p>
       <div class="address">
         <img src="assets/images/probamex-icon.png">
@@ -93,7 +94,7 @@
       <map id="map" ng-model="main.coords"></map>
     </div>
     <div class="contact">
-      <h4>{{'QUES' | translate}}</h4>
+      <h3>{{'QUES' | translate}}</h3>
       <form>
         <input type="text" name="name" placeholder="Nombre">
         <input type="text" name="name" placeholder="Email">
@@ -102,8 +103,7 @@
     </div>
     <div class="message">
       <p>{{'INNO' | translate}}</p>
-      <h4>{{'IDEA' | translate}}</h4>
+      <h3>{{'IDEA' | translate}}</h3>
     </div>
-  </footer>
-
-</div>
+  </div>
+</footer>
