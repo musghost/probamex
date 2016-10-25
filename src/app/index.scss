@@ -12,6 +12,59 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 // bower:scss
 // endbower
 
+@font-face {
+font-family: Anago;
+font-weight: 200;
+src: url("./../assets/fonts/Anago_Thin_Positype.otf") format("opentype");
+}
+@font-face {
+font-family: Anago;
+font-weight: 300;
+src: url("./../assets/fonts/Anago_Book_Positype.otf") format("opentype");
+}
+@font-face {
+font-family: Anago;
+font-weight: 400;
+src: url("./../assets/fonts/Anago_Medium_Positype.otf") format("opentype");
+}
+@font-face {
+font-family: Anago;
+font-weight: 500;
+src: url("./../assets/fonts/Anago_Bold_Positype.otf") format("opentype");
+}
+@font-face {
+font-family: Anago;
+font-weight: 600;
+src: url("./../assets/fonts/Anago_Black_Positype.otf") format("opentype");
+}
+@font-face {
+font-family: Anago;
+font-weight: 300;
+font-style: italic;
+src: url("./../assets/fonts/Anago_BookItalic_Positype.otf") format("opentype");
+}
+@font-face {
+font-family: Anago;
+font-weight: 500;
+font-style: italic;
+src: url("./../assets/fonts/Anago_BoldItalic_Positype.otf") format("opentype");
+}
+@font-face {
+font-family: Neutra;
+font-weight: 400;
+src: url("./../assets/fonts/NeutraText-Book.otf") format("opentype");
+}
+@font-face {
+font-family: Neutra;
+font-weight: 500;
+src: url("./../assets/fonts/NeutraText-Demi.otf") format("opentype");
+}
+@font-face {
+font-family: Neutra;
+font-weight: 600;
+src: url("./../assets/fonts/NeutraText-Bold.otf") format("opentype");
+}
+
 $text: #005F71;
 
 .navbar-nav > li > a {
@@ -185,6 +238,7 @@ $text: #005F71;
     width: 70%;
     font-size: 22px;
     color: $text;
+    font-family: Anago;
   }
 }
 
