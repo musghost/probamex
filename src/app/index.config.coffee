@@ -32,6 +32,7 @@ angular.module 'probamex'
         contacto.'
       IDEA: '¡Su idea podría ser nuestro siguiente nuevo desarrollo!'
       #SECCION_COLORANTES
+      COL_HEADER: '<img src="assets/headers/colorantes.jpg" alt="" class="header">'
       #AZURBIN® Color caramelo
       AZURBIN_CARAM_H2_1: 'AZURBIN®'
       AZURBIN_CARAM_H2_2: 'Color caramelo'
@@ -75,6 +76,7 @@ angular.module 'probamex'
         quemada.'
 
       #SECCION_EDULCORANTES
+      EDUL_HEADER: '<img src="assets/headers/edulcorantes.jpg" alt="" class="header">'
       #sucrex
       SUCREX_H2_1: 'SUCREX®'
       SUCREX_H2_2: 'Jarabe de azúcar invertido.'
@@ -108,6 +110,7 @@ angular.module 'probamex'
         de manejar y almacenar.'
 
       #SECCION_ESPECIALIDADES
+      ESP_HEADER: '<img src="assets/headers/especialidades.jpg" alt="" class="header">'
       #FrutiPro
       FRUTIPRO_H2_1: 'FRUTIPRO®'
       FRUTIPRO_H2_2: 'Frutas y vegetales en polvo.'
@@ -184,6 +187,7 @@ angular.module 'probamex'
         de la canela proveniente de Sri Lanka.'
 
       #SECCION_ SAZONADORES
+      SAZ_HEADER: '<img src="assets/headers/sazonadores.jpg" alt="" class="header">'
       #PIQUIPRO
       PIQUIPRO_H2_1: 'PIQUIPRO®'
       PIQUIPRO_H2_2: 'Sazonadores.'
@@ -198,6 +202,7 @@ angular.module 'probamex'
       BASE_QUESO_P1: 'Queso tipo cheddar'
       BASE_QUESO_P2: 'Queso jalapeño'
       #servicios
+      SER_HEADER: '<img src="assets/headers/servicios.jpg" alt="" class="header">'
       POW: 'Mezcla de polvos'
       POWT: 'A partir de 700kg, realizamos la mezcla de polvos y productos húmedos, ofreciendo un producto homogéneo. El producto terminado
         puede empacarse en sacos, cuñetes o cubetas. También ofrecemos el servicio de análisis sicoquímicos y/o microbiológicos para la materia
@@ -219,6 +224,7 @@ angular.module 'probamex'
         microbiológicos para la materia prima y el producto terminado.'
       SPRB: 'Batch mínimo: 1,000 kg base seca.'
       #nosotros
+      ABOUT_HEADER: '<img src="assets/headers/nosotros.jpg" alt="" class="header">'
       NOS_P1: 'Somos una compañía 100% Mexicana, fundada en 1978, dedicada al desarrollo, manufactura y comercialización de ingredientes de origen
         natural, para la industria de alimentos, bebidas, alimento para mascotas, cosméticos y farmacéuticos. Somos líderes en la producción de
         Color Caramelo en México, llegando a nuestros clientes desde hace más de 3 décadas.'
@@ -272,6 +278,7 @@ angular.module 'probamex'
         needs.'
       IDEA: 'We are daily innovating; your need could become a new development!'
       #servicios
+      SER_HEADER: '<img src="assets/headers/services.jpg" alt="" class="header">'
       POW: 'Powder mixing'
       POWT: 'We can mix powders and high moisture products, with homogeneous results. Finished product can be packed in sacks,  ber drums, or buckets.
         We can also offer physicochemical and microbiological analysis, for raw material and finished product.'
@@ -290,6 +297,7 @@ angular.module 'probamex'
         offer physicochemical and microbiological analysis, for raw material and finished product.'
       SPRB: 'Min. batch: 1,000kg (2,200lbs) of dry basis.'
       #nosotros
+      ABOUT_HEADER: '<img src="assets/headers/aboutus.jpg" alt="" class="header">'
       NOS_P1: 'We are a 100% Mexican company, founded in 1978, committed to develop, manufacture and commercialize natural ingredients for the food,
         beverage, pet food, cosmetic and pharmaceutical industries. We are leaders in Caramel Color manufacture in Mexico, serving our clients for
         more than three decades.'
@@ -323,6 +331,7 @@ angular.module 'probamex'
 
       #SECCION_COLORANTES
       #AZURBIN® Color caramelo
+      COL_HEADER: '<img src="assets/headers/colorings.jpg" alt="" class="header">'
       AZURBIN_CARAM_H2_1: 'AZURBIN®'
       AZURBIN_CARAM_H2_2: 'Caramel color.'
       AZURBIN_CARAM_P1: 'Caramel color is a liquid or solid food coloring made by the controlled heating of food-grade carbohydrates, either alone
@@ -363,6 +372,7 @@ angular.module 'probamex'
         sugar.'
 
       #SECCION_EDULCORANTES
+      EDUL_HEADER: '<img src="assets/headers/sweeteners.jpg" alt="" class="header">'
       #sucrex
       SUCREX_H2_1: 'SUCREX®'
       SUCREX_H2_2: 'Inverted sugar.'
@@ -395,6 +405,7 @@ angular.module 'probamex'
         product, it provides easy hand- ling and storage.'
 
       #SECCION_ESPECIALIDADES
+      ESP_HEADER: '<img src="assets/headers/specialties.jpg" alt="" class="header">'
       #FrutiPro
       FRUTIPRO_H2_1: 'FRUTIPRO®'
       FRUTIPRO_H2_2: 'Spray-dried  uits and vegetables.'
@@ -470,6 +481,7 @@ angular.module 'probamex'
         cinnamon.'
 
       #SECCION_ SAZONADORES
+      SAZ_HEADER: '<img src="assets/headers/seasonings.jpg" alt="" class="header">'
       #PIQUIPRO
       PIQUIPRO_H2_1: 'PIQUIPRO®'
       PIQUIPRO_H2_2: 'Seasonings.'

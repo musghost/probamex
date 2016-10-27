@@ -1,7 +1,5 @@
 <div class="clearfix">
-  <a href="#">
-    <img src="assets/headers/colorantes.jpg" alt="" class="header">
-  </a>
+  <a ng-bind-html="'COL_HEADER' | translate"></a>
 </div>
 
 <div class="colorante">
@@ -26,10 +24,30 @@
           <p>{{'AZUCAR03_P2' | translate}}</p>
         </div>
       </div>
-      <img src="/assets/images/bar-colorantes.png">
+      <div class="bar-wrapper"> 
+        <div>
+          <span>-</span>
+        </div>
+        <div>
+          <img src="/assets/images/bar-colorantes.png">
+        </div>
+        <div>
+          <span>+</span>
+        </div>
+      </div>
       <h1>{{'AZURBIN_A_H1' | translate}}</h1>
       <p>{{'AZURBIN_A_P1' | translate}}</p>
-      <img src="/assets/images/bar-colorantes2.png">
+      <div class="bar-wrapper"> 
+        <div>
+          <span>-</span>
+        </div>
+        <div>
+          <img src="/assets/images/bar-colorantes2.png">
+        </div>
+        <div>
+          <span>+</span>
+        </div>
+      </div>
       <h1>{{'AZURBIN_K2_H1' | translate}}</h1>
       <p>{{'AZURBIN_K2_P1' | translate}}</p>
       <p>{{'AZURBIN_K2_P2' | translate}}</p>
@@ -44,7 +62,17 @@
           <p>{{'DOBLE_K2_P2' | translate}}</p>
         </div>
       </div>
-      <img src="/assets/images/bar-colorantes3.png">
+      <div class="bar-wrapper"> 
+        <div>
+          <span>-</span>
+        </div>
+        <div>
+          <img src="/assets/images/bar-colorantes3.png">
+        </div>
+        <div>
+          <span>+</span>
+        </div>
+      </div>
     </div>
   </div>
   <div class="row">
