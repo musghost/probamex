@@ -15,54 +15,54 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 @font-face {
 font-family: Anago;
 font-weight: 200;
-src: url("/assets/fonts/Anago_Thin_Positype.otf") format("opentype");
+src: url("./../assets/fonts/Anago_Thin_Positype.otf") format("opentype");
 }
 @font-face {
 font-family: Anago;
 font-weight: 300;
-src: url("/assets/fonts/Anago_Book_Positype.otf") format("opentype");
+src: url("./../assets/fonts/Anago_Book_Positype.otf") format("opentype");
 }
 @font-face {
 font-family: Anago;
 font-weight: 400;
-src: url("/assets/fonts/Anago_Medium_Positype.otf") format("opentype");
+src: url("./../assets/fonts/Anago_Medium_Positype.otf") format("opentype");
 }
 @font-face {
 font-family: Anago;
 font-weight: 500;
-src: url("/assets/fonts/Anago_Bold_Positype.otf") format("opentype");
+src: url("./../assets/fonts/Anago_Bold_Positype.otf") format("opentype");
 }
 @font-face {
 font-family: Anago;
 font-weight: 600;
-src: url("/assets/fonts/Anago_Black_Positype.otf") format("opentype");
+src: url("./../assets/fonts/Anago_Black_Positype.otf") format("opentype");
 }
 @font-face {
 font-family: Anago;
 font-weight: 300;
 font-style: italic;
-src: url("/assets/fonts/Anago_BookItalic_Positype.otf") format("opentype");
+src: url("./../assets/fonts/Anago_BookItalic_Positype.otf") format("opentype");
 }
 @font-face {
 font-family: Anago;
 font-weight: 500;
 font-style: italic;
-src: url("/assets/fonts/Anago_BoldItalic_Positype.otf") format("opentype");
+src: url("./../assets/fonts/Anago_BoldItalic_Positype.otf") format("opentype");
 }
 @font-face {
 font-family: Neutra;
 font-weight: 400;
-src: url("/assets/fonts/NeutraText-Book.otf") format("opentype");
+src: url("./../assets/fonts/NeutraText-Book.otf") format("opentype");
 }
 @font-face {
 font-family: Neutra;
 font-weight: 500;
-src: url("/assets/fonts/NeutraText-Demi.otf") format("opentype");
+src: url("./../assets/fonts/NeutraText-Demi.otf") format("opentype");
 }
 @font-face {
 font-family: Neutra;
 font-weight: 600;
-src: url("/assets/fonts/NeutraText-Bold.otf") format("opentype");
+src: url("./../assets/fonts/NeutraText-Bold.otf") format("opentype");
 }
 
 $text: #005F71;
@@ -145,108 +145,6 @@ $text: #005F71;
   }
 }
 
-.menu-container {
-  position: relative;
-  height: 464px;
-  overflow: hidden;
-  font-family: 'Anago';
-
-  .regular {
-    position: absolute;
-    top: 0;
-
-    &:first-child {
-      left: 0;
-    }
-
-    &:last-child {
-      right: 0;
-    }
-  }
-
-  .sqare {
-    position: absolute;
-    left: 35%;
-    z-index: 4;
-
-    & + .sqare {
-      left: 50%;
-      z-index: 2;
-    }
-  }
-
-  .title-content {
-    color: #fff;
-
-    h2 {
-      font-size: 40px;
-      text-transform: uppercase;
-      margin-top: 60px;
-      font-weight: 800;
-      margin-bottom: 10px;
-    }
-
-    h4 {
-      font-size: 22px;
-      font-weight: 800;
-      margin-bottom: 0;
-      margin-top: 20px;
-      letter-spacing: 1px;
-    }
-
-    p {
-      font-size: 25px;
-      font-weight: 300;
-      margin-top: 0;
-    }
-  }
-
-  .colorantes {
-    position: absolute;
-    left: 24%;
-    color: #fff;
-    bottom: 0;
-    top: 0;
-    right: 0;
-    z-index: 4;
-    display: none;
-
-    &:after {
-      position: absolute;
-      background: #ff5401;
-      transform: skewX(-18deg);
-      left: -1%;
-      top: 0;
-      right: -10%;
-      bottom: 0;
-      content: '';
-      border-left: 5px solid #fff;
-    }
-
-    .colorantes-inside {
-      padding-left: 12%;
-      position: relative;
-      z-index: 1;
-    }
-
-  }
-
-  .edulcorantes {
-    background: #72D54A;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    content: '';
-    position: absolute;
-    z-index: 3;
-
-    .edulcorantes-inside {
-      padding-left: 59%;
-    }
-  }
-}
-
 .sqare {
   width: 27%;
   height: 464px;
@@ -265,7 +163,6 @@ $text: #005F71;
   &:nth-child(3) {
     border-right: 10px solid #fff;
   }
-
 }
 
 .sqare-inside {
@@ -310,18 +207,30 @@ $text: #005F71;
 }
 
 .regular {
+  float: left;
   width: 35%;
   overflow: hidden;
 
   img {
-    max-height: 100%;
+    max-height: 464px;
   }
-}
 
-.header {
-  width: 100%;
-  display: block;
-  margin: 0 100px 0 0;
+  &:first-child {
+    .regular-inside {
+      img {
+        margin-left: -50px;
+      }
+    }
+  }
+
+  &:last-child {
+    margin-left: -12%;
+    .regular-inside {
+      img {
+        margin-left: -250px;
+      }
+    }
+  }
 }
 
 .central-text {
@@ -583,31 +492,52 @@ $especialidades: #EA1D76;
 }
 
 $sazonadores: #FFC627;
-.sazonadores {
-  h2 {
-    color: $sazonadores;
-    font-family: Anago;
-    font-weight: 500;
-    font-size: 23px;
-    padding: 5px 0 0 20px;
-    line-height: 1.3em;
+
+.seasonings {
+  display: flex;
+
+  .piquipro {
+    flex: 1;
+
+    h2 {
+      color: $sazonadores;
+      font-family: Anago;
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 1.3em;
+    }
+
+    p {
+      font-size: 17px;
+      font-family: Anago;
+      font-weight: 300;
+      line-height: 1.3em;
+      text-align: justify;
+      width: 80%;
+    }
   }
-  p {
-    padding-left: 20px;
-    margin-bottom: 0;
-    font-size: 17px;
-    font-family: Anago;
-    font-weight: 300;
-    line-height: 1.3em;
-    text-align: justify;
-  }
+
   .rightsquare {
-    h3 {padding: 0 0 0 15px;}
-    p {text-align: left;}
-    margin: 15px -25px 0 0;
+    flex: 0 25%;
+    margin: 20px 10px 0 5px;
     background-color: $sazonadores;
     color: #FFF;
-    padding: 0 35px 80px 0px;
+    font-family: Anago;
+    padding-bottom: 50px;
+
+    h3 {
+      margin-left: 15px;
+      line-height: 2em;
+      margin-top: 0px;
+    }
+
+    p {
+      text-align: left;
+      margin-left: 1.6em;
+      font-size: 16px;
+      font-family: Anago;
+      line-height: 0.8em;
+    } 
   }
 }
 
