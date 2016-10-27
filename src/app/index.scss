@@ -479,6 +479,26 @@ $colorante: #ff5401;
   }
 }
 
+.bar-wrapper {
+  display: flex;
+
+  div {
+    display: block;
+    flex: 1;
+  }
+
+  div > span {
+    display: block;
+    flex: 1;
+    text-align: center;
+    color: $colorante;
+    font-family: Anago;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 45px;
+  }
+}
+
 $edulcorante: #72d54a;
 .edulcorante {
   h2, h3 {
