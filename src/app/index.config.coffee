@@ -27,10 +27,9 @@ angular.module 'probamex'
       #footer
       TEL: 'conmut.'
       SALES: 'ventas'
-      QUES: '¿Encontró todo lo que buscaba?'
-      INNO: 'Estamos innovando día a día. Si no encontró lo que buscaba, deje sus comentarios y a la brevedad un representante se pondrá en
-        contacto.'
-      IDEA: '¡Su idea podría ser nuestro siguiente nuevo desarrollo!'
+      QUES: '¿Cómo podemos ayudarlo?'
+      INNO: 'Si quiere conocer más sobre nuestros productos y servicios contáctenos, tenemos soluciones que pueden ajustarse a sus necesidades específicas.'
+      IDEA: 'Estamos innovando día a día. ¡Su necesidad puede ser el siguiente nuevo desarrollo!'
       #SECCION_COLORANTES
       #AZURBIN® Color caramelo
       AZURBIN_CARAM_H2_1: 'AZURBIN®'
