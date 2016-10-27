@@ -15,54 +15,54 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 @font-face {
 font-family: Anago;
 font-weight: 200;
-src: url("./../assets/fonts/Anago_Thin_Positype.otf") format("opentype");
+src: url("/assets/fonts/Anago_Thin_Positype.otf") format("opentype");
 }
 @font-face {
 font-family: Anago;
 font-weight: 300;
-src: url("./../assets/fonts/Anago_Book_Positype.otf") format("opentype");
+src: url("/assets/fonts/Anago_Book_Positype.otf") format("opentype");
 }
 @font-face {
 font-family: Anago;
 font-weight: 400;
-src: url("./../assets/fonts/Anago_Medium_Positype.otf") format("opentype");
+src: url("/assets/fonts/Anago_Medium_Positype.otf") format("opentype");
 }
 @font-face {
 font-family: Anago;
 font-weight: 500;
-src: url("./../assets/fonts/Anago_Bold_Positype.otf") format("opentype");
+src: url("/assets/fonts/Anago_Bold_Positype.otf") format("opentype");
 }
 @font-face {
 font-family: Anago;
 font-weight: 600;
-src: url("./../assets/fonts/Anago_Black_Positype.otf") format("opentype");
+src: url("/assets/fonts/Anago_Black_Positype.otf") format("opentype");
 }
 @font-face {
 font-family: Anago;
 font-weight: 300;
 font-style: italic;
-src: url("./../assets/fonts/Anago_BookItalic_Positype.otf") format("opentype");
+src: url("/assets/fonts/Anago_BookItalic_Positype.otf") format("opentype");
 }
 @font-face {
 font-family: Anago;
 font-weight: 500;
 font-style: italic;
-src: url("./../assets/fonts/Anago_BoldItalic_Positype.otf") format("opentype");
+src: url("/assets/fonts/Anago_BoldItalic_Positype.otf") format("opentype");
 }
 @font-face {
 font-family: Neutra;
 font-weight: 400;
-src: url("./../assets/fonts/NeutraText-Book.otf") format("opentype");
+src: url("/assets/fonts/NeutraText-Book.otf") format("opentype");
 }
 @font-face {
 font-family: Neutra;
 font-weight: 500;
-src: url("./../assets/fonts/NeutraText-Demi.otf") format("opentype");
+src: url("/assets/fonts/NeutraText-Demi.otf") format("opentype");
 }
 @font-face {
 font-family: Neutra;
 font-weight: 600;
-src: url("./../assets/fonts/NeutraText-Bold.otf") format("opentype");
+src: url("/assets/fonts/NeutraText-Bold.otf") format("opentype");
 }
 
 $text: #005F71;
@@ -145,6 +145,108 @@ $text: #005F71;
   }
 }
 
+.menu-container {
+  position: relative;
+  height: 464px;
+  overflow: hidden;
+  font-family: 'Anago';
+
+  .regular {
+    position: absolute;
+    top: 0;
+
+    &:first-child {
+      left: 0;
+    }
+
+    &:last-child {
+      right: 0;
+    }
+  }
+
+  .sqare {
+    position: absolute;
+    left: 35%;
+    z-index: 4;
+
+    & + .sqare {
+      left: 50%;
+      z-index: 2;
+    }
+  }
+
+  .title-content {
+    color: #fff;
+
+    h2 {
+      font-size: 40px;
+      text-transform: uppercase;
+      margin-top: 60px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    h4 {
+      font-size: 22px;
+      font-weight: 800;
+      margin-bottom: 0;
+      margin-top: 20px;
+      letter-spacing: 1px;
+    }
+
+    p {
+      font-size: 25px;
+      font-weight: 300;
+      margin-top: 0;
+    }
+  }
+
+  .colorantes {
+    position: absolute;
+    left: 24%;
+    color: #fff;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    z-index: 4;
+    display: none;
+
+    &:after {
+      position: absolute;
+      background: #ff5401;
+      transform: skewX(-18deg);
+      left: -1%;
+      top: 0;
+      right: -10%;
+      bottom: 0;
+      content: '';
+      border-left: 5px solid #fff;
+    }
+
+    .colorantes-inside {
+      padding-left: 12%;
+      position: relative;
+      z-index: 1;
+    }
+
+  }
+
+  .edulcorantes {
+    background: #72D54A;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    position: absolute;
+    z-index: 3;
+
+    .edulcorantes-inside {
+      padding-left: 59%;
+    }
+  }
+}
+
 .sqare {
   width: 27%;
   height: 464px;
@@ -163,6 +265,7 @@ $text: #005F71;
   &:nth-child(3) {
     border-right: 10px solid #fff;
   }
+
 }
 
 .sqare-inside {
