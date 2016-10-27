@@ -50,16 +50,16 @@
   </nav>
 
   <ui-view>
-    <div class="clearfix menu-container">
-      <a href="#" class="regular">
+    <div class="clearfix menu-container" id="main-menu" coolmenu>
+      <a href="#" class="regular pullorange">
         <div class="regular-inside">
           <img src="assets/images/beer.jpg" alt="">
         </div>
       </a>
-      <a href="#" class="sqare">
+      <a href="#" class="sqare pullgreen">
         <div class="sqare-inside muffin"></div>
       </a>
-      <a href="#" class="sqare">
+      <a href="#" class="sqare pullpurple">
         <div class="sqare-inside cookies"></div>
       </a>
       <div class="title-content colorantes">
@@ -80,8 +80,8 @@
           <p>Azúcar caramelizada</p>
         </div>
       </div>
-      <div class="title-content especialidades">
-        <div class="especialidades-inside">
+      <div class="title-content especial">
+        <div class="especial-inside">
           <h2>ESPECIALIDADES</h2>
           <h4>FRUTIPRO&reg;</h4>
           <p>Frutas y vegetales en polvo</p>
@@ -92,7 +92,14 @@
           <h4>CANELA EN POLVO</h4>
         </div>
       </div>
-      <a href="#" class="regular">
+      <div class="title-content sazonadores-title">
+        <div class="sazonadores-inside">
+          <h2>Sazonadores</h2>
+          <h4>PIQUIPRO&reg;</h4>
+          <p>Sazonadores</p>
+        </div>
+      </div>
+      <a href="#" class="regular pullyellow">
         <div class="regular-inside">
           <img src="assets/images/chips.jpg" alt="">
         </div>
@@ -100,7 +107,7 @@
     </div>
 
     <div class="central-text">
-      <p>{{'CENTRAL' | translate}}</p>
+      <p ng-bind-html="'CENTRAL' | translate"></p>
     </div>
   </ui-view>
 </div>
@@ -117,7 +124,7 @@
       </p>
       <div class="address">
         <img src="assets/images/probamex-icon.png">
-        <p>Calle Alce Blanco #40 Fracc. Ind. Alce Blanco Naucalpan de Juárez Edo. de México, 53370</p>
+        <p>Calle Alce Blanco #40 Fracc. Ind. Alce Blanco Naucalpan de Juárez Edo. de México, 53370</p>
       </div>
     </div>
     <div class="map">
