@@ -407,30 +407,18 @@ $text: #005F71;
 }
 
 .regular {
-  float: left;
   width: 35%;
   overflow: hidden;
 
   img {
-    max-height: 464px;
+    max-height: 100%;
   }
+}
 
-  &:first-child {
-    .regular-inside {
-      img {
-        margin-left: -50px;
-      }
-    }
-  }
-
-  &:last-child {
-    margin-left: -12%;
-    .regular-inside {
-      img {
-        margin-left: -250px;
-      }
-    }
-  }
+.header {
+  width: 100%;
+  display: block;
+  margin: 0 100px 0 0;
 }
 
 .central-text {
