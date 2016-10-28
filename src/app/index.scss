@@ -537,20 +537,21 @@ $colorante: #ff5401;
     font-weight: 500;
   }
   h2 {
-    font-size: 27px;
-    font-weight: 500;
     font-family: Anago;
-    line-height: .9em;
-    padding: 0 0 5px 0;
+    line-height: 1.3em;
+    padding: 0 0 5px 20px;
     margin-bottom: 0;
+    font-size: 23px;
   }
   h3 {
     font-family: Anago;
     font-size: 16px;
     margin-bottom: 0;
+    padding-left: 20px;
   }
 
   p {
+    padding-left: 20px;
     margin: 0;
     font-size: 17px;
     font-family: Anago;
@@ -575,6 +576,27 @@ $colorante: #ff5401;
     color: #FFF;
     margin-top: 25px;
     padding: 1px 3px 10px 13px;
+  }
+}
+
+.bar-wrapper {
+  display: flex;
+
+  div {
+    display: block;
+    flex: 1;
+    max-width: 100%;
+  }
+
+  div > span {
+    display: block;
+    flex: 1;
+    text-align: center;
+    color: $colorante;
+    font-family: Anago;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 45px;
   }
 }
 
@@ -753,7 +775,7 @@ $servicios: #006072;
 
 $nosotros: #0099a8;
 .nosotros {
-  margin-top: 30px;
+  margin-top: 15px;
 
   h3 {
     font-weight: 500;
@@ -763,7 +785,7 @@ $nosotros: #0099a8;
   }
   p {
     padding: 0 0 10px 30px;
-    font-size: 15px;
+    font-size: 17px;
     font-family: Anago;
     line-height: 1.4em;
     font-weight: 300;
@@ -819,9 +841,124 @@ $nosotros: #0099a8;
   text-align: center!important;
 }
 
+.jcarousel-wrapper {
+  background: #C5C5C5;
+  font-family: Anago;
+  margin-bottom: 50px;
+
+  h2 {
+    color: $nosotros;
+    margin-bottom: 50px;
+    padding-left: 20px;
+    margin-top: 20px;
+  }
+
+  .controls {
+    .jcarousel-control-prev {
+      float: left;
+    }
+
+    .jcarousel-control-next {
+      float: right;
+    }
+  }
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    width: 20000em;
+
+    &:after {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 35px;
+      height: 10px;
+      background: $nosotros;
+      content: '';
+    }
+  }
+
+  li {
+    float: left;
+    width: 200px;
+
+    &:first-child {
+      .time-space {
+        padding-left: 0;
+      }
+    }
+
+    &:last-child {
+      .time-space {
+        padding-right: 0;
+      }
+    }
+  }
+
+  .time-space {
+    text-align: center;
+    padding: 0 20px 40px;
+    color: #6A6A69;
+    font-size: 1.3em;
+    font-weight: 300;
+    line-height: 1.2em;
+  }
+
+  .time-year {
+    color: $nosotros;
+    font-size: 25px;
+    margin-bottom: 40px;
+    font-weight: 400;
+  }
+
+  .controls {
+    padding: 0 20px;
+    font-size: 3em;
+    margin: 50px 0 30px;
+
+    a {
+      color: #fff;
+
+      &:hover, &:active {
+        text-decoration: none;
+      }
+    }
+
+    .jcarousel-control-prev {
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-right: 10px solid #fff;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: 10px solid transparent;
+    }
+
+    .jcarousel-control-next {
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-left: 10px solid #fff;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-right: 10px solid transparent;
+    }
+  }
+}
+
 /**
  *  Do not remove the comments below. It's the markers used by gulp-inject to inject
  *  all your sass files automatically
  */
 // injector
 // endinjector
+
+

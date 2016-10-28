@@ -1,10 +1,56 @@
 <div class="clearfix">
-  <a href="#">
-    <img src="assets/headers/nosotros.jpg" alt="" class="header">
-  </a>
+  <a ng-bind-html="'ABOUT_HEADER' | translate"></a>
 </div>
 
+
 <div class="nosotros">
+  <div class="jcarousel-wrapper clearfix" jcarouseldir>
+    <h2>Línea del tiempo</h2>
+    <div class="carousel jcarousel clearfix">
+      <ul class="">
+        <li>
+          <div class="time-space">
+            <div class="time-year">1978</div>
+            <div>Los señores Alberto Garduño y Adela Sansoube <strong>fundan</strong> Probamex.</div>
+          </div>
+        </li>
+        <li>
+          <div class="time-space">
+            <div class="time-year">1978</div>
+            <div>Comienza fabricación de <strong>Color Caramelo</strong> y <strong>Jarabes de Azúcar Invertido</strong>.</div>
+          </div>
+        </li>
+        <li>
+          <div class="time-space">
+            <div class="time-year">1982</div>
+            <div>Se adquiere el <strong>1er. secador <i>spray dry</i></strong> para maquilar levadura en polvo.</div>
+          </div>
+        </li>
+        <li>
+          <div class="time-space">
+            <div class="time-year">1990</div>
+            <div>Primeras <strong>exportaciones</strong> de Color Caramelo a Chile y Cuba.</div>
+          </div>
+        </li>
+        <li>
+          <div class="time-space">
+            <div class="time-year">1995</div>
+            <div>Se inaugura el <strong>área de Mezclas</strong> para fabricar ajo y cebolla en polvo.</div>
+          </div>
+        </li>
+        <li>
+          <div class="time-space">
+            <div class="time-year">1978</div>
+            <div>Los señores Alberto Garduño y Adela Sansoube <strong>fundan</strong> Probamex.</div>
+          </div>
+        </li>
+      </ul>
+      <div class="controls clearfix">
+        <a href="#" class="jcarousel-control-prev"></a>
+        <a href="#" class="jcarousel-control-next"></a>
+      </div>
+    </div>
+  </div>
   <div class="row">
     <div class="col-sm-7">
       <p>{{'NOS_P1' | translate}}</p>
