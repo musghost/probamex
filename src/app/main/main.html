@@ -18,7 +18,7 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">{{'PRODUCT' | translate}}</a>
+          <li><a ui-sref="home({id: main.lang})">{{'PRODUCT' | translate}}</a>
             <ul>
               <li class="nav-colorante">
                 <a ui-sref="home.colorantes({id: main.lang})">{{'COLOR' | translate}}</a>
@@ -41,8 +41,8 @@
             <a ui-sref="home.nosotros({id: main.lang})">{{'ABOUT' | translate}}</a>
           </li>
           <li class="translateButtons">
-            <a href="#">ENGLISH</a>
-            <a href="#" class="active">ESPAÑOL</a>
+            <a href="#" ng-click="main.change($event)" ng-class="{'active':main.lang==='en'}">ENGLISH</a>
+            <a href="#" ng-click="main.change($event)" ng-class="{'active':main.lang==='es'}">ESPAÑOL</a>
           </li>
         </ul>
       </div><!-- /.navbar-collapse -->

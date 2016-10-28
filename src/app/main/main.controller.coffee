@@ -1,5 +1,5 @@
 angular.module 'probamex'
-  .controller 'MainController', ($timeout, webDevTec, toastr, $stateParams) ->
+  .controller 'MainController', ($timeout, webDevTec, toastr, $stateParams, $state) ->
     'ngInject'
     vm = this
 
@@ -24,6 +24,14 @@ angular.module 'probamex'
         awesomeThing.rank = Math.random()
         return
       return
+
+    vm.change = (e) ->
+      e.preventDefault()
+      if $stateParams.id == 'es'
+        to = 'en'
+      else
+        to = 'es'
+      $state.go $state.current.name, {id: to}, {reload: true}
 
     vm.coords =
       lat: 19.378455
