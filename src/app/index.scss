@@ -15,57 +15,75 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 @font-face {
 font-family: Anago;
 font-weight: 200;
-src: url("/assets/fonts/Anago_Thin_Positype.otf") format("opentype");
+src: url("../assets/fonts/Anago_Thin_Positype.otf") format("opentype");
 }
 @font-face {
 font-family: Anago;
 font-weight: 300;
-src: url("/assets/fonts/Anago_Book_Positype.otf") format("opentype");
+src: url("../assets/fonts/Anago_Book_Positype.otf") format("opentype");
 }
 @font-face {
 font-family: Anago;
 font-weight: 400;
-src: url("/assets/fonts/Anago_Medium_Positype.otf") format("opentype");
+src: url("../assets/fonts/Anago_Medium_Positype.otf") format("opentype");
 }
 @font-face {
 font-family: Anago;
 font-weight: 500;
-src: url("/assets/fonts/Anago_Bold_Positype.otf") format("opentype");
+src: url("../assets/fonts/Anago_Bold_Positype.otf") format("opentype");
 }
 @font-face {
 font-family: Anago;
 font-weight: 600;
-src: url("/assets/fonts/Anago_Black_Positype.otf") format("opentype");
+src: url("../assets/fonts/Anago_Black_Positype.otf") format("opentype");
 }
 @font-face {
 font-family: Anago;
 font-weight: 300;
 font-style: italic;
-src: url("/assets/fonts/Anago_BookItalic_Positype.otf") format("opentype");
+src: url("../assets/fonts/Anago_BookItalic_Positype.otf") format("opentype");
 }
 @font-face {
 font-family: Anago;
 font-weight: 500;
 font-style: italic;
-src: url("/assets/fonts/Anago_BoldItalic_Positype.otf") format("opentype");
+src: url("../assets/fonts/Anago_BoldItalic_Positype.otf") format("opentype");
 }
 @font-face {
 font-family: Neutra;
 font-weight: 400;
-src: url("/assets/fonts/NeutraText-Book.otf") format("opentype");
+src: url("../assets/fonts/NeutraText-Book.otf") format("opentype");
 }
 @font-face {
 font-family: Neutra;
 font-weight: 500;
-src: url("/assets/fonts/NeutraText-Demi.otf") format("opentype");
+src: url("../assets/fonts/NeutraText-Demi.otf") format("opentype");
 }
 @font-face {
 font-family: Neutra;
 font-weight: 600;
-src: url("/assets/fonts/NeutraText-Bold.otf") format("opentype");
+src: url("../assets/fonts/NeutraText-Bold.otf") format("opentype");
+}
+
+
+body {
+  color: #6a6a69;
 }
 
 $text: #005F71;
+
+.navbar-brand {
+  height: inherit;
+}
+
+.navbar-toggle.collapsed {
+  margin-right: 0;
+  margin-top: 20px;
+
+  .icon-bar {
+    background: #6a6a69;
+  }
+}
 
 .navbar-nav > li > a {
   padding: 40px 40px;
@@ -74,10 +92,16 @@ $text: #005F71;
   font-family: Anago;
   font-weight: 500;
   color: #595857;
+  position: relative;
 
-    &:hover {
-    background-color: transparent;
-    color: #0099A8;
+    &:hover, &:active, &:focus {
+      background-color: transparent;
+      color: #0099A8;
+
+      span {
+        border-bottom: 3px solid #0099A8;
+        padding-bottom: 4px;
+      }
     }
 }
 
@@ -203,7 +227,7 @@ $text: #005F71;
 
   .colorantes {
     position: absolute;
-    left: 24%;
+    left: 30%;
     color: #fff;
     bottom: 0;
     top: 0;
@@ -215,7 +239,7 @@ $text: #005F71;
       position: absolute;
       background: #ff5401;
       transform: skewX(-18deg);
-      left: -1%;
+      left: -9.7%;
       top: 0;
       right: -10%;
       bottom: 0;
@@ -224,9 +248,10 @@ $text: #005F71;
     }
 
     .colorantes-inside {
-      padding-left: 12%;
+      left: 5%;
       position: relative;
       z-index: 1;
+      position: relative;
     }
 
   }
@@ -265,7 +290,7 @@ $text: #005F71;
 
   .sazonadores-title {
     position: absolute;
-    right: 24%;
+    right: 31%;
     color: #fff;
     bottom: 0;
     top: 0;
@@ -279,7 +304,7 @@ $text: #005F71;
       transform: skewX(-18deg);
       left: -10%;
       top: 0;
-      right: -1%;
+      right: -11%;
       bottom: 0;
       content: '';
       border-right: 5px solid #fff;
@@ -302,6 +327,21 @@ $text: #005F71;
   &.setorange {
     .pullorange {
       z-index: 4;
+
+      .regular-inside {
+        position: relative;
+
+        &:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          background: #FF5402;
+          opacity: 0.5;
+        }
+      }
     }
 
     .colorantes {
@@ -313,6 +353,21 @@ $text: #005F71;
   &.setgreen {
     .pullgreen {
       z-index: 5;
+
+      .sqare-inside {
+        position: relative;
+
+        &:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          background: #72d54a;
+          opacity: 0.5;
+        }
+      }
     }
 
     .edulcorantes {
@@ -324,6 +379,21 @@ $text: #005F71;
   &.setpurple {
     .pullpurple {
       z-index: 5;
+
+      .sqare-inside {
+        position: relative;
+
+        &:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          background: #EA1D76;
+          opacity: 0.5;
+        }
+      }
     }
 
     .especial {
@@ -335,6 +405,21 @@ $text: #005F71;
   &.setyellow {
     .pullyellow {
       z-index: 4;
+
+      .regular-inside {
+        position: relative;
+
+        &:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          background: #FFC627;
+          opacity: 0.5;
+        }
+      }
     }
 
     .sazonadores-title {
@@ -446,16 +531,20 @@ footer {
   font-weight: 300;
 
   h3 {
-      font-family: Anago;
-      font-size: 16px;
-      font-weight: 400;
-      display: inline-block;
-      margin: 0;
-    }
+    font-family: Anago;
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    margin: 0;
+  }
+
+  .footer-wrapper {
+    display: flex;
+    align-items: stretch;
+  }
 
   .address-tel {
     margin-top: 10px;
-    float: left;
     width: 18%;
 
     h2 {
@@ -474,23 +563,38 @@ footer {
 
   .map {
     padding-top: 20px;
-    float: left;
     width: 26%;
   }
 
   .contact {
-    float: left;
-    width: 29%;
+    width: 36%;
     padding: 0 20px;
+    padding-bottom: 50px;
+
+    h3 {
+      position: absolute;
+    }
   }
 
   .message {
     padding-top: 20px;
-    float: left;
-    width: 27%;
+    width: 20%;
   }
 
   form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 20px;
+    position: relative;
+
+    & > div {
+      flex: 1;
+
+      &:last-child {
+        text-align: right;
+      }
+    }
 
     input {
       width: 100%;
@@ -499,19 +603,34 @@ footer {
       border: 0;
       margin-bottom: 10px;
       color: $text;
+      padding: 5px 10px;
 
       &::placeholder {
         color: $text;
+        font-size: 0.75em;
       }
     }
 
     textarea {
       width: 100%;
-      height: 100px;
+      height: 120px;
 
       &::placeholder {
         color: $text;
+        font-size: 0.75em;
       }
+    }
+
+    button {
+      background: #0099a8;
+      border: 0;
+      color: #fff;
+      border-radius: 10px;
+      border: 0;
+      position: absolute;
+      bottom: -30px;
+      right: 0;
+      padding: 2px 20px;
     }
   }
 }
@@ -531,7 +650,7 @@ $colorante: #ff5401;
   h1 {
     color: #fff;
     background: $colorante;
-    padding: 5px;
+    padding: 9px 5px;
     font-family: Anago;
     font-size: 23px;
     font-weight: 500;
@@ -575,7 +694,7 @@ $colorante: #ff5401;
     background: $colorante;
     color: #FFF;
     margin-top: 25px;
-    padding: 1px 3px 10px 13px;
+    padding: 1px 3px 20px 13px;
   }
 }
 
@@ -653,6 +772,8 @@ $edulcorante: #72d54a;
 
 $especialidades: #EA1D76;
 .especialidades {
+  padding-top: 20px;
+
   h2 {
     font-size: 23px;
     padding: 5px 0 0 20px;
@@ -679,22 +800,18 @@ $especialidades: #EA1D76;
     text-align: justify;
   }
   ul {
-    padding: 15px 0 0 30px;
+    padding: 5px 0 0 30px;
     list-style-type: none;
   }
   .rightsquare1 {
     h3 {padding: 0 0 0 15px;}
-    margin: 15px -25px 0 0;
     background-color: $especialidades;
     color: #FFF;
-    padding: 0 35px 10px 0px;
   }
   .rightsquare2 {
     h3 {padding: 0 0 0 15px;}
-    margin: 15px -25px 0 0;
     background-color: $especialidades;
     color: #FFF;
-    padding: 0 35px 160px 0px;
   }
   .greysquare {
     h3 {margin: 20px 10px 0 0;}
@@ -803,6 +920,7 @@ $nosotros: #0099a8;
     font-family: Anago;
     font-size: 18px;
     padding: 0 0 0 30px;
+    margin-bottom: 0;
   }
   p {
     padding: 0 0 10px 30px;
@@ -819,8 +937,9 @@ $nosotros: #0099a8;
   .left-square {
     color: #FFF;
     background: $nosotros;
-    margin: 20px 0 30px 20px;
+    margin: 20px 30px 30px 20px;
     position: relative;
+    line-height: 2em;
 
     ul {
       color: #FFF;
@@ -829,6 +948,20 @@ $nosotros: #0099a8;
       font-size: 16px;
       padding: 15px;
       list-style-type: none;
+    }
+
+    &:after {
+      content: '';
+      background: {
+        image: url('../assets/images/arrow.png');
+        repeat: no-repeat;
+        size: cover;
+      }
+      position: absolute;
+      width: 50px;
+      top: 0;
+      right: -50px;
+      bottom: 0;
     }
   }
   .right-heading {
@@ -872,16 +1005,45 @@ $nosotros: #0099a8;
     margin-bottom: 50px;
     padding-left: 20px;
     margin-top: 20px;
+    position: relative;
+
+    &:after {
+      content: '';
+      border-top: 15px solid #fff;
+      border-left: 15px solid transparent;
+      border-bottom: 15px solid transparent;
+      border-right: 15px solid transparent;
+      position: absolute;
+      bottom: -40px;
+      left: 100px;
+    }
+  }
+}
+
+.controls {
+  background: #C5C5C5;
+  padding: 0 30px 20px;
+
+  .jcarousel-control-prev {
+    float: left;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-right: 10px solid #fff;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
   }
 
-  .controls {
-    .jcarousel-control-prev {
-      float: left;
-    }
-
-    .jcarousel-control-next {
-      float: right;
-    }
+  .jcarousel-control-next {
+    float: right;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid #fff;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid transparent;
   }
 }
 
@@ -952,27 +1114,50 @@ $nosotros: #0099a8;
         text-decoration: none;
       }
     }
-
-    .jcarousel-control-prev {
-      display: inline-block;
-      width: 0;
-      height: 0;
-      border-right: 10px solid #fff;
-      border-top: 10px solid transparent;
-      border-bottom: 10px solid transparent;
-      border-left: 10px solid transparent;
-    }
-
-    .jcarousel-control-next {
-      display: inline-block;
-      width: 0;
-      height: 0;
-      border-left: 10px solid #fff;
-      border-top: 10px solid transparent;
-      border-bottom: 10px solid transparent;
-      border-right: 10px solid transparent;
-    }
   }
+}
+
+.vegetable-wrapper {
+  display: flex;
+  align-items: stretch;
+
+  & > div {
+    flex: 1;
+    margin-left: 15px;
+  }
+
+  .rightsquare1, .rightsquare2{
+    padding: 1px 0 10px;
+    height: 100%;
+  }
+}
+
+.descriptions {
+  padding-left: 15px;
+}
+
+.orange-background {
+  background: #ff5401;
+}
+
+.green-background {
+  background: #72d54a;
+}
+
+.purple-background {
+  background: #EA1D76;
+}
+
+.yellow-background {
+  background: #FFC627;
+}
+
+.services-background {
+  background: #006072;
+}
+
+.about-background {
+  background: #0099a8;
 }
 
 /**
@@ -981,5 +1166,6 @@ $nosotros: #0099a8;
  */
 // injector
 // endinjector
+
 
 
