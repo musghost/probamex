@@ -272,6 +272,31 @@ angular.module 'probamex'
       T12: 'Primeras <strong>exportaciones a Europa</strong> de miel de abeja en polvo y a Centroamérica, de cereales hidrolizados.'
       T13: 'Sigue aumentando la demanda de productos secados por aspersión, por lo que se <strong>triplica la capacidad</strong> del secador piloto, habilitándolo para producción 24hrs.'
       T14: 'Nuevos desarrollos impulsan la creación del área de <strong>Molienda y Pulverización</strong>.'
+      #COLORANTES
+      COLORANTE_H2: 'COLORANTES'
+      AZURBIN_H4: 'AZURBIN®'
+      COLOR_CARAM_P: 'Color caramelo'
+      AZUQUEM_H4: 'AZUQUEM®'
+      AZUCAR_CARAM_P: 'Azúcar caramelizada'
+      #EDUCLCORANTES
+      EDULCORANTES_H2: 'EDULCORANTES'
+      SUCREX_H4: 'SUCREX®'
+      JARABE_AI_P: 'Jarabe de azúcar invertido'
+      ABEMIEL_H4: 'ABEMIEL®'
+      MIEL_ABEJA_P: 'Miel de abeja en polvo'
+      #ESPECIALIDADES
+      ESPECIALIDADES_H2: 'ESPECIALIDADES'
+      FRUTIPRO_H4: 'FRUTIPRO®'
+      FV_POLVO_P: 'Frutas y vegetales en polvo'
+      CER_HIDRO_H4: 'CEREALES HIDROLIZADOS'
+      YEASTEX_H4: 'YEASTEX®'
+      NUT_LEV_P: 'Nutriente para levadura'
+      EX_JAM_LIQ_H4: 'EXTRACTO DE JAMAICA LÍQUIDO'
+      CAN_POLVO_H4: 'CANELA EN POLVO'
+      #SAZONADORES
+      SAZONADORES_H2: 'SAZONADORES'
+      PIQUIPRO_H4: 'PIQUIPRO®'
+      SAZONADORES_P: 'Sazonadores'
 
     $translateProvider.translations 'en',
       #menu
@@ -528,5 +553,30 @@ angular.module 'probamex'
       T12: 'First honey powder <strong>exports to Europe</strong>, and hydrolyzed cereals to Central America.'
       T13: 'The increasing demand of spray-dried products urges to <strong>triple the pilot-test dryer capacity</strong>. 24h operation is enabled.'
       T14: 'New product developments drive the creation of the <strong>Milling and Pulverization Area</strong>.'
+      #COLORANTES
+      COLORANTE_H2: 'COLORINGS'
+      AZURBIN_H4: 'AZURBIN®'
+      COLOR_CARAM_P: 'Caramel Color'
+      AZUQUEM_H4: 'AZUQUEM®'
+      AZUCAR_CARAM_P: 'Caramelized sugar'
+      #EDUCLCORANTES
+      EDULCORANTES_H2: 'EDULCORANTES'
+      SUCREX_H4: 'SUCREX®'
+      JARABE_AI_P: 'Inverted sugar'
+      ABEMIEL_H4: 'ABEMIEL®'
+      MIEL_ABEJA_P: 'Honey powder'
+      #ESPECIALIDADES
+      ESPECIALIDADES_H2: 'ESPECIALITIES'
+      FRUTIPRO_H4: 'FRUTIPRO®'
+      FV_POLVO_P: 'Spray-dried fruits and vetables'
+      CER_HIDRO_H4: 'HIDROLIZED CEREALS'
+      YEASTEX_H4: 'YEASTEX®'
+      NUT_LEV_P: 'Yeast nutrient'
+      EX_JAM_LIQ_H4: 'HIBISCUS LIQUID EXTRACT'
+      CAN_POLVO_H4: 'CINNAMON POWDER'
+      #SAZONADORES
+      SAZONADORES_H2: 'SEASONINGS'
+      PIQUIPRO_H4: 'PIQUIPRO®'
+      SAZONADORES_P: 'Seasonings'
 
     $translateProvider.preferredLanguage 'es'
