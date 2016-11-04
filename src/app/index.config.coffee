@@ -560,7 +560,7 @@ angular.module 'probamex'
       AZUQUEM_H4: 'AZUQUEM®'
       AZUCAR_CARAM_P: 'Caramelized sugar'
       #EDUCLCORANTES
-      EDULCORANTES_H2: 'EDULCORANTES'
+      EDULCORANTES_H2: 'SWEETENERS'
       SUCREX_H4: 'SUCREX®'
       JARABE_AI_P: 'Inverted sugar'
       ABEMIEL_H4: 'ABEMIEL®'
