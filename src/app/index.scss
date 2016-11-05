@@ -78,10 +78,54 @@ $text: #005F71;
 
 .navbar-toggle.collapsed {
   margin-right: 0;
-  margin-top: 20px;
+  margin-top: 30px;
 
   .icon-bar {
     background: #6a6a69;
+  }
+}
+
+@media (max-width: $screen-md) {
+  .container-fluid > .navbar-header {
+    float: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+
+    img {
+      max-width: 250px;
+    }
+  }
+
+  .container-fluid > .navbar-collapse {
+    float: none!important;
+
+    .navbar-right {
+      float: none!important;
+      margin: 0 auto;
+    }
+
+    @media (max-width: $screen-xs) {
+      .navbar-nav > li > a {
+        padding: 10px;
+      }
+
+      .translateButtons {
+        margin-top: 10px!important;
+        margin-left: 10px!important;
+
+        a {
+          display: inline-block;
+          font-weight: 400!important;
+          font-size: 1.0em!important;
+        }
+      }
+    }
+  }
+
+  #main-menu {
+    display: none;
   }
 }
 
@@ -541,6 +585,27 @@ footer {
   .footer-wrapper {
     display: flex;
     align-items: stretch;
+
+    @media (max-width: $screen-md) {
+      flex-wrap: wrap;
+      & > div {
+        width: 50%;
+      }
+    }
+    @media (max-width: $screen-xs) {
+      .message,
+      .map {
+        display: none;
+      }
+
+      & > div {
+        width: 100%;
+      }
+    }
+
+    .contact {
+      padding-left: 0;
+    }
   }
 
   .address-tel {
@@ -680,6 +745,8 @@ $colorante: #ff5401;
 
   img {
     padding-top: 10px;
+    max-width: 100%;
+    width: 100%;
   }
   .fontorange {
     color: $colorante;
@@ -704,7 +771,10 @@ $colorante: #ff5401;
   div {
     display: block;
     flex: 1;
-    max-width: 100%;
+
+    &:nth-child(2) {
+      flex-basis: 90%;
+    }
   }
 
   div > span {
@@ -773,6 +843,14 @@ $edulcorante: #72d54a;
 $especialidades: #EA1D76;
 .especialidades {
   padding-top: 20px;
+
+  @media (max-width: $screen-md) {
+    .rightsquare1 {
+      ul {
+        padding-left: 5px;
+      }
+    }
+  }
 
   h2 {
     font-size: 23px;
@@ -948,20 +1026,6 @@ $nosotros: #0099a8;
       font-size: 16px;
       padding: 15px;
       list-style-type: none;
-    }
-
-    &:after {
-      content: '';
-      background: {
-        image: url('../assets/images/arrow.png');
-        repeat: no-repeat;
-        size: cover;
-      }
-      position: absolute;
-      width: 50px;
-      top: 0;
-      right: -50px;
-      bottom: 0;
     }
   }
   .right-heading {

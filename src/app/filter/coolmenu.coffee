@@ -38,3 +38,10 @@ angular.module 'probamex'
         menu.removeClass 'setyellow'
         return
       return
+  .directive 'navcollapse', ->
+    link: ->
+      $("#navbutton").click (e) ->
+        e.preventDefault()
+        $("#navcollapse").toggleClass 'collapsed'
+        $("#navcollapse").toggleClass 'collapse'
+
