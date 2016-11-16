@@ -14,7 +14,6 @@ angular.module 'probamex'
         zoom: 11
         scrollwheel: false
         center: center
-        disableDefaultUI: true
         mapTypeId: google.maps.MapTypeId.ROADMAP
       map = new google.maps.Map(document.getElementById(attrs.id), mapOptions)
 

@@ -605,6 +605,7 @@ footer {
 
     .contact {
       padding-left: 0;
+      margin-left: 15px;
     }
   }
 
@@ -677,8 +678,13 @@ footer {
     }
 
     textarea {
-      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+      min-height: 120px;
+      max-height: 120px;
       height: 120px;
+      color: $text;
+      padding: 5px 10px;
 
       &::placeholder {
         color: $text;
