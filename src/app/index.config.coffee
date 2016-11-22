@@ -12,7 +12,7 @@ angular.module 'probamex'
 
     $translateProvider.translations 'es',
       #menu
-      COL_LOGO: '<img src="assets/images/probamex.png" alt="" class="header">'
+      COL_LOGO: '<img src="assets/images/probamex.png" alt="logo" class="header">'
       PRODUCT: 'Productos'
       SERVICE: 'Servicios'
       ABOUT: 'Nosotros'
