@@ -12,6 +12,7 @@ angular.module 'probamex'
 
     $translateProvider.translations 'es',
       #menu
+      COL_LOGO: '<img src="assets/images/probamex.png" alt="" class="header">'
       PRODUCT: 'Productos'
       SERVICE: 'Servicios'
       ABOUT: 'Nosotros'
@@ -300,6 +301,7 @@ angular.module 'probamex'
 
     $translateProvider.translations 'en',
       #menu
+      COL_LOGO: '<img src="assets/headers/probamex.jpg" alt="" class="header">'
       PRODUCT: 'Products'
       SERVICE: 'Services'
       ABOUT: 'About Us'
@@ -372,7 +374,7 @@ angular.module 'probamex'
 
       #SECCION_COLORANTES
       #AZURBIN® Color caramelo
-      COL_HEADER: '<img src="assets/headers/colorings.jpg" alt="" class="header">'
+      COL_HEADER: '<img src="assets/headers/colorings.jpg" alt="" class="header">'  
       AZURBIN_CARAM_H2_1: 'AZURBIN®'
       AZURBIN_CARAM_H2_2: 'Caramel color.'
       AZURBIN_CARAM_P1: 'Caramel color is a liquid or solid food coloring made by the controlled heating of food-grade carbohydrates, either alone
