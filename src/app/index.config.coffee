@@ -12,6 +12,7 @@ angular.module 'probamex'
 
     $translateProvider.translations 'es',
       #menu
+      LOGO: '<img src="assets/images/probamex.png">'
       PRODUCT: 'Productos'
       SERVICE: 'Servicios'
       ABOUT: 'Nosotros'
@@ -300,6 +301,7 @@ angular.module 'probamex'
 
     $translateProvider.translations 'en',
       #menu
+      LOGO:'<img src="assets/images/probamex-eng.png">'
       PRODUCT: 'Products'
       SERVICE: 'Services'
       ABOUT: 'About Us'
