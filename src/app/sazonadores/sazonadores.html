@@ -7,18 +7,22 @@
 <div class="container">
   <div class="seasonings">
     <div class="piquipro">
-      <h2>{{'PIQUIPRO_H2_1' | translate}}<br>{{'PIQUIPRO_H2_2' | translate}}</h2>
-      <p>{{'PIQUIPRO_P1' | translate}}</p>
+      <h2>
+        <span ng-bind-html="'PIQUIPRO_H2_1' | translate"></span>
+        <br>
+        <span ng-bind-html="'PIQUIPRO_H2_2' | translate"></span>
+      </h2>
+      <p ng-bind-html="'PIQUIPRO_P1' | translate"></p>
     </div>
     <div class="rightsquare">
-      <h3>{{'BASE_CHILE_H3' | translate}}</h3> 
-        <p>{{'BASE_CHILE_P1' | translate}}</p> 
-        <p>{{'BASE_CHILE_P2' | translate}}</p>
+      <h3 ng-bind-html="'BASE_CHILE_H3' | translate"></h3> 
+        <p ng-bind-html="'BASE_CHILE_P1' | translate"></p> 
+        <p ng-bind-html="'BASE_CHILE_P2' | translate"></p>
     </div>
     <div class="rightsquare">
-      <h3>{{'BASE_QUESO_H3' | translate}}</h3> 
-            <p>{{'BASE_QUESO_P1' | translate}}</p> 
-            <p>{{'BASE_QUESO_P2' | translate}}</p>
+      <h3 ng-bind-html="'BASE_QUESO_H3' | translate"></h3> 
+      <p ng-bind-html="'BASE_QUESO_P1' | translate"></p> 
+      <p ng-bind-html="'BASE_QUESO_P2' | translate"></p>
     </div>
   </div>
 </div>

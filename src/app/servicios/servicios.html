@@ -8,28 +8,33 @@
   <div class="servicios">
     <div class="row">
       <div class="col-sm-6">
-        <h2>{{'POW' | translate}}</h2>
-        <p>{{'POWT' | translate}}
-          <b>{{'POWB' | translate}}</b>
+        <h2 ng-bind-html="'POW' | translate"></h2>
+        <p>
+          <span nb-bind-html="'POWT' | translate"></span>
+          <b ng-bind-html="'POWB' | translate"></b>
         </p>
       </div>
       <div class="col-sm-6">
-        <h2>{{'MILL' | translate}}</h2>
-        <p>{{'MILLT' | translate}}
-          <b>{{'MILLB' | translate}}</b></p>
+        <h2 ng-bind-html="'MILL' | translate"></h2>
+        <p>
+          <span ng-bind-html="'MILLT' | translate"></span>
+          <b ng-bind-html="'MILLB' | translate"></b>
+        </p>
       </div>
     </div>
     <div class="row">
       <div class="col-sm-6">
         <h2 ng-bind-html="'MIX' | translate"></h2>
-        <p>{{'MIXT' | translate}}
-          <b>{{'MIXB' | translate}}</b>
+        <p>
+          <span ng-bind-html="'MIXT' | translate"></span>
+          <b ng-bind-html="'MIXB' | translate"></b>
         </p>
       </div>
       <div class="col-sm-6">
         <h2 ng-bind-html="'SPR' | translate"></h2>
-        <p>{{'SPRT' | translate}}
-          <b>{{'SPRB' | translate}}</b>
+        <p>
+          <span ng-bind-html="'SPRT' | translate"></span>
+          <b ng-bind-html="'SPRB' | translate"></b>
         </p>
       </div>
     </div>

@@ -19,35 +19,35 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navcollapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a ui-sref="home({id: main.lang})">{{'PRODUCT' | translate}}</a>
+            <li><a ui-sref="home({id: main.lang})" ng-bind-html="'PRODUCT' | translate"></a>
               <ul>
                 <li class="nav-colorante">
-                  <a ui-sref="home.colorantes({id: main.lang})">{{'COLOR' | translate}}</a>
+                  <a ui-sref="home.colorantes({id: main.lang})" ng-bind-html="'COLOR' | translate"></a>
                 </li>
                 <li class="nav-edulcorante">
-                  <a ui-sref="home.edulcorantes({id: main.lang})">{{'EDUL' | translate}}</a>
+                  <a ui-sref="home.edulcorantes({id: main.lang})" ng-bind-html="'EDUL' | translate"></a>
                 </li>
                 <li class="nav-especialidad">
-                  <a ui-sref="home.especialidades({id: main.lang})">{{'ESP' | translate}}</a>
+                  <a ui-sref="home.especialidades({id: main.lang})" ng-bind-html="'ESP' | translate"></a>
                 </li>
                 <li class="nav-sazonador">
-                  <a ui-sref="home.sazonadores({id: main.lang})">{{'SAZON' | translate}}</a>
+                  <a ui-sref="home.sazonadores({id: main.lang})" ng-bind-html="'SAZON' | translate"></a>
                 </li>
               </ul>
             </li>
             <li>
               <a ui-sref="home.servicios({id: main.lang})">
-                <span>{{'SERVICE' | translate}}</span>
+                <span ng-bind-html="'SERVICE' | translate"></span>
               </a>
             </li>
             <li>
               <a ui-sref="home.nosotros({id: main.lang})">
-                <span>{{'ABOUT' | translate}}</span>
+                <span ng-bind-html="'ABOUT' | translate"></span>
               </a>
             </li>
             <li class="translateButtons">
               <a href="#" ng-click="main.change($event)" ng-class="{'active':main.lang==='en'}">ENGLISH</a>
-              <a href="#" ng-click="main.change($event)" ng-class="{'active':main.lang==='es'}">ESPAÑOL</a>
+              <a href="#" ng-click="main.change($event)" ng-class="{'active':main.lang==='es'}">ESPA&Ntilde;OL</a>
             </li>
           </ul>
         </div><!-- /.navbar-collapse -->
@@ -71,39 +71,39 @@
         </a>
         <div class="title-content colorantes">
           <div class="colorantes-inside">
-            <h2>{{'COLORANTE_H2' | translate}}</h2>
-            <h4>{{'AZURBIN_H4' | translate}}</h4>
-            <p>{{'COLOR_CARAM_P' | translate}}</p>
-            <h4>{{'AZUQUEM_H4' | translate}}</h4>
-            <p>{{'AZUCAR_CARAM_P' | translate}}</p>
+            <h2 ng-bind-html="'COLORANTE_H2' | translate"></h2>
+            <h4 ng-bind-html="'AZURBIN_H4' | translate"></h4>
+            <p ng-bind-html="'COLOR_CARAM_P' | translate"></p>
+            <h4 ng-bind-html="'AZUQUEM_H4' | translate"></h4>
+            <p ng-bind-html="'AZUCAR_CARAM_P' | translate"></p>
           </div>
         </div>
         <div class="title-content edulcorantes">
           <div class="edulcorantes-inside">
-            <h2>{{'EDULCORANTES_H2' | translate}}</h2>
-            <h4>{{'SUCREX_H4' | translate}}</h4>
-            <p>{{'JARABE_AI_P' | translate}}</p>
-            <h4>{{'ABEMIEL_H4' | translate}}</h4>
-            <p>{{'MIEL_ABEJA_P' | translate}}</p>
+            <h2 ng-bind-html="'EDULCORANTES_H2' | translate"></h2>
+            <h4 ng-bind-html="'SUCREX_H4' | translate"></h4>
+            <p ng-bind-html="'JARABE_AI_P' | translate"></p>
+            <h4 ng-bind-html="'ABEMIEL_H4' | translate"></h4>
+            <p ng-bind-html="'MIEL_ABEJA_P' | translate"></p>
           </div>
         </div>
         <div class="title-content especial">
           <div class="especial-inside">
-            <h2>{{'ESPECIALIDADES_H2' | translate}}</h2>
-            <h4>{{'FRUTIPRO_H4' | translate}}</h4>
-            <p>{{'FV_POLVO_P' | translate}}</p>
-            <h4>{{'CER_HIDRO_H4' | translate}}</h4>
-            <h4>{{'YEASTEX_H4' | translate}}</h4>
-            <p>{{'NUT_LEV_P' | translate}}</p>
-            <h4>{{'EX_JAM_LIQ_H4' | translate}}</h4>
-            <h4>{{'CAN_POLVO_H4' | translate}}</h4>
+            <h2 ng-bind-html="'ESPECIALIDADES_H2' | translate"></h2>
+            <h4 ng-bind-html="'FRUTIPRO_H4' | translate"></h4>
+            <p ng-bind-html="'FV_POLVO_P' | translate"></p>
+            <h4 ng-bind-html="'CER_HIDRO_H4' | translate"></h4>
+            <h4 ng-bind-html="'YEASTEX_H4' | translate"></h4>
+            <p ng-bind-html="'NUT_LEV_P' | translate"></p>
+            <h4 ng-bind-html="'EX_JAM_LIQ_H4' | translate"></h4>
+            <h4 ng-bind-html="'CAN_POLVO_H4' | translate"></h4>
           </div>
         </div>
         <div class="title-content sazonadores-title">
           <div class="sazonadores-inside">
-            <h2>{{'SAZONADORES_H2' | translate}}</h2>
-            <h4>{{'PIQUIPRO_H4' | translate}}</h4>
-            <p>{{'SAZONADORES_P' | translate}}</p>
+            <h2 ng-bind-html="'SAZONADORES_H2' | translate"></h2>
+            <h4 ng-bind-html="'PIQUIPRO_H4' | translate"></h4>
+            <p ng-bind-html="'SAZONADORES_P' | translate"></p>
           </div>
         </div>
         <a ui-sref="home.sazonadores({id: main.lang})" class="regular pullyellow">
@@ -125,32 +125,32 @@
     <div class="footer-wrapper">
       <div class="address-tel">
         <p>
-          <div><h2>{{'TEL' | translate}}</h2>
+          <div><h2 ng-bind-html="'TEL' | translate"></h2>
           <span>+52 (55) 53587599</span></div>
           <h2>{{'SALES' | translate}}</h2>
-          <span>+52 (55) 2629·2260</span>
+          <span>+52 (55) 26292260</span>
           <span>info@probamex.com</span>
         </p>
         <div class="address">
           <img src="assets/images/probamex-icon.png">
-          <p>Calle Alce Blanco #40<br>Fracc. Ind. Alce Blanco<br>Naucalpan de Juárez<br>Edo. de México, 53370</p>
+          <p>Calle Alce Blanco #40<br>Fracc. Ind. Alce Blanco<br>Naucalpan de Ju&aacute;rez<br>Edo. de M&eacute;xico, 53370</p>
         </div>
       </div>
       <div class="map">
         <map id="map" ng-model="main.coords"></map>
       </div>
       <div class="contact">
-        <h3>{{'QUES' | translate}}</h3>
-        <form>
+        <h3 ng-bind-html="'QUES' | translate"></h3>
+        <form action="submit.php" method="POST">
           <div><input type="text" name="name" placeholder="NOMBRE" required></div>
           <div><input type="email" name="name" placeholder="EMAIL" required></div>
           <div><textarea placeholder="MENSAJE" required></textarea></div>
-          <button>Enviar</button>
+          <button type="submit">Enviar</button>
         </form>
       </div>
       <div class="message">
-        <p>{{'INNO' | translate}}</p>
-        <h3>{{'IDEA' | translate}}</h3>
+        <p ng-bind-html="'INNO' | translate"></p>
+        <h3 ng-bind-html="'IDEA' | translate"></h3>
       </div>
     </div>
   </div>
