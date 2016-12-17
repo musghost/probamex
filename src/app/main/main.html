@@ -142,10 +142,10 @@
       <div class="contact">
         <h3 ng-bind-html="'QUES' | translate"></h3>
         <form action="submit.php" method="POST">
-          <div><input type="text" name="name" placeholder="NOMBRE" required></div>
-          <div><input type="email" name="name" placeholder="EMAIL" required></div>
-          <div><textarea placeholder="MENSAJE" required></textarea></div>
-          <button type="submit">Enviar</button>
+          <div><input type="text" name="name" placeholder="{{'NOMBRE' | translate}}" required></div>
+          <div><input type="email" name="name" placeholder="{{'EMAIL' | translate}}" required></div>
+          <div><textarea placeholder="{{'MENSAJE' | translate}}" required></textarea></div>
+          <button type="submit"><span ng-bind-html="'ENVIAR' | translate"></span></button>
         </form>
       </div>
       <div class="message">

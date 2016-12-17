@@ -29,6 +29,10 @@ angular.module 'probamex'
       TEL: 'conmut.'
       SALES: 'ventas'
       QUES: '&#191;C&oacute;mo podemos ayudarlo?'
+      NOMBRE: 'NOMBRE'
+      EMAIL: 'EMAIL'
+      MENSAJE: 'MENSAJE'
+      ENVIAR: 'Enviar'
       INNO: 'Si quiere conocer m&aacute;s sobre nuestros productos y servicios cont&aacute;ctenos, tenemos soluciones que pueden ajustarse a sus necesidades espec&iacute;ficas.'
       IDEA: 'Estamos innovando d&iacute;a a d&iacute;a &#161;Su necesidad podr&iacute;a ser nuestro siguiente desarrollo!'
       #SECCION_COLORANTES
@@ -62,7 +66,7 @@ angular.module 'probamex'
       #AZURBIN&reg; K2 Clase IV (E150d)*
       AZURBIN_K2_H1: 'AZURBIN&reg; K2 Clase IV (E150d)*'
       AZURBIN_K2_P1: 'Este color se obtiene mediante un tratamiento t&eacute;rmico controlado de az&uacute;cares, en presencia de compuestos am&oacute;nicos y sulf&iacute;ticos,
-        lo que le da una carga negativa. Es resistente a pH’s &aacute;cidos.'
+        lo que le da una carga negativa. Es resistente a pH&apos;s &aacute;cidos.'
       AZURBIN_K2_P2: '*Por su naturaleza contiene sulfitos.'
       #K2 Poder sencillo
       PODER_K2_H3: 'K2 Poder sencillo'
@@ -241,12 +245,12 @@ angular.module 'probamex'
       UL1_LI2: 'Cuauht&eacute;moc Moctezuma-Heineken'
       UL1_LI3: 'Grupo Herdez'
       UL1_LI4: 'Unilever M&eacute;xico'
-      UL1_LI5: 'Mondel&eacute;z International'
+      UL1_LI5: 'Mondel&emacr;z International'
       UL2_LI1: 'Honey Green Espa&ntilde;a'
       UL2_LI2: 'Dos Pinos Costa Rica'
       UL2_LI3: 'Nestl&eacute; Chile'
       UL2_LI4: 'Haitoglou Bros Grecia'
-      UL2_LI5: 'Cervecer&iacute;a Bucanero Cuba'
+      UL2_LI5: 'Cervercer&iacute;a Bucanero Cuba'
       CLIE_H3: 'Clientes'
       CLIE_P: 'Nuestra atenci&oacute;n, servicio, calidad, capacidad de distribuci&oacute;n e innovaci&oacute;n, nos han llevado a obtener el reconocimiento de Proveedor
         Confiable otorgado por empresas multinacionales.'
@@ -318,6 +322,10 @@ angular.module 'probamex'
       TEL: 'tel.'
       SALES: 'sales'
       QUES: 'How can we help you?'
+      NOMBRE: 'NAME'
+      EMAIL: 'EMAIL'
+      MENSAJE: 'MESSAGE'
+      ENVIAR: 'Send'
       INNO: 'If you want to receive further information about our products and services, contact us! We have solutions that can meet your specific
         needs.'
       IDEA: 'We are daily innovating; your need could become a new development!'
@@ -355,12 +363,12 @@ angular.module 'probamex'
       UL1_LI2: 'Cuauht&eacute;moc Moctezuma-Heineken'
       UL1_LI3: 'Grupo Herdez'
       UL1_LI4: 'Unilever M&eacute;xico'
-      UL1_LI5: 'Mondel&eacute;z International'
+      UL1_LI5: 'Mondel&emacr;z International'
       UL2_LI1: 'Honey Green Spain'
       UL2_LI2: 'Dos Pinos Costa Rica'
       UL2_LI3: 'Nestl&eacute; Chile'
       UL2_LI4: 'Haitoglou Bros Greece'
-      UL2_LI5: 'Cervecería Bucanero Cuba'
+      UL2_LI5: 'Cervecer&iacute;a Bucanero Cuba'
       CLIE_H3: 'Clients'
       CLIE_P: 'Our service, quality, and ability of distribution and innovation, made us worthy of the Reliable Supplier Recognition, given by
         global companies.'
@@ -378,8 +386,8 @@ angular.module 'probamex'
       AZURBIN_CARAM_H2_1: 'AZURBIN&reg;'
       AZURBIN_CARAM_H2_2: 'Caramel color.'
       AZURBIN_CARAM_P1: 'Caramel color is a liquid or solid food coloring made by the controlled heating of food-grade carbohydrates, either alone
-        or in the presence of ammonia or sulfite compounds. It is a water dis- persible colloidal aggregate.'
-      AZURBIN_CARAM_P2: 'Since our caramel color is made  om cane sugar, it’s a GMO free product.'
+        or in the presence of ammonia or sulfite compounds. It is a water dispersible colloidal aggregate.'
+      AZURBIN_CARAM_P2: 'Since our caramel color is made  om cane sugar, it&apos;s a GMO free product.'
       #AZUQUEM&reg; Clase I (E150a)*
       AZUQUEM_C1_H1: 'AZUQUEM&reg; Class I (E150a)*'
       AZUQUEM_C1_P1: 'Natural caramel color, obtained by the controlled heating of carbohydrates with food-grade acids or alkalis.'
@@ -421,10 +429,10 @@ angular.module 'probamex'
       SUCREX_H2_1: 'SUCREX&reg;'
       SUCREX_H2_2: 'Inverted sugar.'
       SUCREX_P1: 'Inverted sugar is a caloric sweetener, in which the molecular structure of sucrose is inverted through acid and thermal hydrolysis.
-        Being a combination of sucrose, glucose and fructose, it is 1.3 times sweeter than regular sugar and it doesn’t recrystallize. Inverted sugar
+        Being a combination of sucrose, glucose and fructose, it is 1.3 times sweeter than regular sugar and it doesn&apos;t recrystallize. Inverted sugar
         syrups are highly soluble in water.'
       SUCREX_P2: 'They are greatly used in the food and beverage industry as moisturizing, anti-crystallizing, and antifreeze agents; for accelerating
-        fermentation, developing caramelization, and also for increas- ing viscosity in liquids.'
+        fermentation, developing caramelization, and also for increasing viscosity in liquids.'
       SUCREX_P3: 'Our syrups contain maximum 75&deg;Bx and can be made from undefined or refined cane sugar, with an amber or translucent finish.'
       #SUCREX&reg; C Simple
       SUCREX_SIMPLE_H1: 'SUCREX&reg; C Simple'
@@ -440,24 +448,24 @@ angular.module 'probamex'
       SUCREX_ED_P1: 'Total invert cane sugar syrup, 90% min. reducing sugars.'
       #ABEMIEL
       ABEMIEL_H2: 'ABEMIEL&reg;'
-      ABEMIEL_P1: 'Honey is a natural, antibiotic free, caloric sweete- ner produced by bees using nectar from flowers.'
+      ABEMIEL_P1: 'Honey is a natural, antibiotic free, caloric sweetener produced by bees using nectar from flowers.'
       ABEMIEL_P2: 'We spray dry honey using food-grade carriers, to keep its functional and nutritional properties.'
       #MielDeAbejaEnPolvo
       ABEMIEL_POLVO_H1: 'Honey powder.'
       ABEMIEL_POLVO_P1: 'Honey is encapsulated during the spray-drying process, so it can keep its flavor within formulations that require high
         temperature process, like baking. Besides giving flavor to a wide range of products, it can also be used as sugar substitute. As a powdered
-        product, it provides easy hand- ling and storage.'
+        product, it provides easy handling and storage.'
 
       #SECCION_ESPECIALIDADES
       ESP_HEADER: '<img src="assets/headers/specialties.jpg" alt="" class="header">'
       #FrutiPro
       FRUTIPRO_H2_1: 'FRUTIPRO&reg;'
       FRUTIPRO_H2_2: 'Spray-dried fruits and vegetables.'
-      FRUTIPRO_P1: 'Spray-dried fruits and vegetables are juices, pulps or purees, dried into fine powders that pre- serve their flavor and nutrients.
-        They are natural options that can be incorporated into low mois- ture content products, or can be reconstituted with liquids. They are easier
-        to handle and can be stored for longer time than raw fruits and vege- tables.'
+      FRUTIPRO_P1: 'Spray-dried fruits and vegetables are juices, pulps or purees, dried into fine powders that preserve their flavor and nutrients.
+        They are natural options that can be incorporated into low moisture content products, or can be reconstituted with liquids. They are easier
+        to handle and can be stored for longer time than raw fruits and vegetables.'
       #Frutas
-      FRUTAS_H3: 'Frutas'
+      FRUTAS_H3: 'Fruits'
       #Frutas Primer UL
       FRUTAS_UL1_LI_1: 'Lemon'
       FRUTAS_UL1_LI_2: 'Tamarind'
@@ -480,17 +488,17 @@ angular.module 'probamex'
       FRUTAS_UL2_LI_8: 'Soursop'
       FRUTAS_UL2_LI_9: 'Banana'
       #Vegetales
-      VEGETALES_H3: 'Vegetales'
+      VEGETALES_H3: 'Vegetables'
       #Vegetales UL
       VEGETALES_UL_LI_1: 'Tomato'
       VEGETALES_UL_LI_2: 'Avocado'
-      VEGETALES_UL_LI_3: 'carrot'
+      VEGETALES_UL_LI_3: 'Carrot'
       #Cereales Hidrolizados
       CEREALES_H2: 'HYDROLYZED CEREALS'
-      CEREALES_P1: 'Hydrolyzed cereals are obtained by the controlled heating of  our slurries, in the presence of en- zymes, which pregelatinize the
+      CEREALES_P1: 'Hydrolyzed cereals are obtained by the controlled heating of  our slurries, in the presence of enzymes, which pregelatinize the
         starch and increase their carbohydrate and fiber availability. They are then spray-dried, resulting in a fine powder. This allows the cereal to
         be consumed directly, no cooking is needed.'
-      CEREALES_P2: 'These cereals are sweet and taste like cooked cereal. When dissolved, they increase the solu- tion’s viscosity and stand still
+      CEREALES_P2: 'These cereals are sweet and taste like cooked cereal. When dissolved, they increase the solution&apos;s viscosity and stand still
         in suspension.'
       #Harina de Arroz
       HARINA_ARROZ_H3: 'Hydrolyzed rice flour*'
@@ -512,8 +520,8 @@ angular.module 'probamex'
       YEASTEX_H2_1: 'YEASTEX&reg;'
       YEASTEX_H1_2: 'Yeast nutrient.'
       YEASTEX_P1: 'A mixture of specific nutrients developed to fortify yeasts; it accelerates growth and reduces fermentation times. It is highly
-        used in the Brewing Industry since it increases alco- hol yield for every kilo of must; ensures maximum usage of'
-      YEASTEX_P2: 'fermentable sugars; increases yeasts resistance to high alco- hol concentration and; helps maintain strains pure and in optimum
+        used in the Brewing Industry since it increases alcohol yield for every kilo of must; ensures maximum usage of'
+      YEASTEX_P2: 'fermentable sugars; increases yeasts resistance to high alcohol concentration and; helps maintain strains pure and in optimum
         shape.'
       #Extracto de jamaica liquido
       EXTRACTO_JAMAICA_H2: 'HIBISCUS LIQUID EXTRACT'
@@ -529,7 +537,7 @@ angular.module 'probamex'
       #PIQUIPRO
       PIQUIPRO_H2_1: 'PIQUIPRO&reg;'
       PIQUIPRO_H2_2: 'Seasonings.'
-      PIQUIPRO_P1: 'Our seasonings are the result of a balanced powder mixture that gives your snacks a great flavor. We have diferent pep- per-based
+      PIQUIPRO_P1: 'Our seasonings are the result of a balanced powder mixture that gives your snacks a great flavor. We have diferent pepper-based
         and cheese-based options.'
       #Base de Chile
       BASE_CHILE_H3: 'Pepper-based'
@@ -541,7 +549,7 @@ angular.module 'probamex'
       BASE_QUESO_P2: 'Jalape&ntilde;o cheese.'
       TIMELINE: 'Timeline'
       INGREDIENTSIMG: '<img src="assets/images/ingredientsen.png">'
-      T1: 'Alberto Garduño Sr and Mrs Adela Sansoube <strong>found</strong> Probamex.'
+      T1: 'Alberto Gardu&ntilde;o Sr and Mrs Adela Sansoube <strong>found</strong> Probamex.'
       T2: 'First <strong>Caramel Color</strong> and <strong>Inverted Sugar Syrup</strong> productions.'
       T3: 'We acquire our first <strong>Spray Dryer</strong> to produce yeast powder.'
       T4: 'First Caramel Color <strong>exports</strong> to Chile and Cuba.'
