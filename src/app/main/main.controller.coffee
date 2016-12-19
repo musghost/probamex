@@ -34,8 +34,8 @@ angular.module 'probamex'
       $state.go $state.current.name, {id: to}, {reload: true}
 
     vm.coords =
-      lat: 19.479196
-      lng: -99.2289927
+      lat: 19.4791655
+      lng: -99.2268673
     vm.awesomeThings = []
     vm.classAnimation = ''
     vm.creationDate = 1463367494353

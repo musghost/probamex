@@ -85,6 +85,14 @@ $text: #005F71;
   }
 }
 
+#main-menu-mobil {
+  display: none;
+
+  img {
+    max-width: 100%;
+  }
+}
+
 @media (max-width: $screen-md) {
   .container-fluid > .navbar-header {
     float: none;
@@ -126,6 +134,10 @@ $text: #005F71;
 
   #main-menu {
     display: none;
+  }
+
+  #main-menu-mobil {
+    display: block;
   }
 }
 

@@ -113,6 +113,10 @@
         </a>
       </div>
 
+      <div id="main-menu-mobil">
+        <img src="assets/images/home.png">
+      </div>
+
       <div class="central-text">
         <p ng-bind-html="'CENTRAL' | translate"></p>
       </div>
@@ -141,10 +145,11 @@
       </div>
       <div class="contact">
         <h3 ng-bind-html="'QUES' | translate"></h3>
-        <form action="submit.php" method="POST">
-          <div><input type="text" name="name" placeholder="{{'NOMBRE' | translate}}" required></div>
-          <div><input type="email" name="name" placeholder="{{'EMAIL' | translate}}" required></div>
-          <div><textarea placeholder="{{'MENSAJE' | translate}}" required></textarea></div>
+        <form action="http://probamex.com/submit.php" method="POST">
+          <div><input type="text" name="nombre" placeholder="{{'NOMBRE' | translate}}" required></div>
+          <div><input type="email" name="email" placeholder="{{'EMAIL' | translate}}" required></div>
+          <div><input type="hidden" name="lang" ng-value="main.lang" ></div>
+          <div><textarea name="mensaje" placeholder="{{'MENSAJE' | translate}}" required></textarea></div>
           <button type="submit"><span ng-bind-html="'ENVIAR' | translate"></span></button>
         </form>
       </div>
